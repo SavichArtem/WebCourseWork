@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rufina:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rufina:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rufina:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Header */
+
+header{
+    height: 13rem;
+    width: 120rem;
+    display: flex;
+    background: var(--233000, #233000);
+}
+
+header .Logo{
+    width: 19.188rem;
+    height: 7.188rem;
+    margin-left: 7.375rem;
+    margin-top: 2.875rem;
+}
+
+header .NaviOpen{
+    width: 5.875rem;
+    height: 4.438rem;
+    margin-left: 2.813rem;
+    margin-top: 4.25rem;
+}
+
+header p{
+    width: 14.375rem;
+    height: 3.313rem;
+    color: var(--FFFFFF, #FFF);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Inter;
+    font-size: 1.625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 5.35rem;
+    letter-spacing: 0.03rem;
+    margin-left: 42.313rem;
+}
+
+header .reservations_btn{
+    width: 17.813rem;
+    height: 5.5rem;
+    font-family: Rufina;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3rem;
+    border: 2px solid var(--FFFFFF, #FFF);
+    background-color: transparent;
+    color: white;
+    margin-left: 1.625rem;
+    margin-top: 3.75rem;
+}
+
+/* Main */
+
+/* HeroSection */
+
+.hero_section{
+    width: 120rem;
+    height: 159.625rem;
+    background: var(--233000, #233000);
+}
+
+.headline_hero{
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    width: 66.063rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3.125rem;
+    margin-left: 8.625rem;
+    margin-top: 6.375rem;
+}
+
+.headline_hero h1{
+    z-index: 1;
+    align-self: stretch;
+    color: var(--FFFFFF, #FFF);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Rufina;
+    font-size: 9.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 9.5rem;
+}
+
+.headline_hero p{
+    width: 35.313rem;
+    color: var(--FFFFFF, #FFF);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Lato;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.03rem;
+}
+
+.hero_img{
+    max-width: 90rem;
+    position: absolute;
+    right: 6.5%;
+    top: 46.3%;
+    z-index: 1;
+}
+
+.hero_scroll_default{
+    margin-left: 8.7rem;
+    padding-top: 45.4rem;
+    width: 4rem;
+    height: 35.125rem;
+    flex-shrink: 0;
+}
+
+.hero_scroll_default h2{
+    transform: rotate(90deg);
+    color: var(--FFFFFF, #FFF);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Rufina;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+.hero_scroll_default img{
+    margin-top: 5.25rem;
+    margin-left: 1.8rem;
+    width: 0.125rem;
+    height: 25.375rem;
+}
+
+.imageBox_first h2{
+    width: 30.813rem;
+    height: 9.938rem;
+    color: var(--FFFFFF, #FFF);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Rufina;
+    font-size: 4.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 5.25rem;
+    margin-top: 3rem;
+}
+
+.imageBox_first p{
+    width: 35.313rem;
+    color: var(--FFFFFF, #FFF);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Lato;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.03rem;
+    margin-top: 3.5rem;
+}
+
+.ImageBox_second p{
+    width: 31.75rem;
+    color: var(--FFFFFF, #FFF);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Lato;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.03rem;
+}
+
+.ImageBox_second img{
+    margin-top: 5.25rem;
+}
+
+.imageBoxes{
+    display: grid;
+    width: 102.75rem;
+    height: 55.938rem;
+    margin-left: 8.625rem;
+    margin-top: 9.313rem;
+    grid-template-columns: 50% 31%;
+    justify-content: space-between;
+}
