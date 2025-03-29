@@ -191,3 +191,91 @@ header .reservations_btn{
     grid-template-columns: 50% 31%;
     justify-content: space-between;
 }
+
+.menu_section{
+    display: flex;
+    width: 120rem;
+    height: 89.625rem;
+    background-image: url("../assets/MenuImage.png");
+    background-position: 99.8% 0%;
+    background-repeat: no-repeat;
+    background-size: 46.2%;
+}
+
+.menu_container{
+    width: 102.75rem;
+    height: 65rem;
+    margin-top: 11rem;
+    margin-left: 8.625rem;
+}
+
+.menu_text{
+    width: 33.25rem;
+}
+
+.menu_text h3{
+    color: var(--000000, #000);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Rufina;
+    font-size: 6.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 7.5rem;
+}
+
+.menu_text p{
+    color: var(--4D4D4D, #4D4D4D);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Lato;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.03rem;
+    margin-top: 1.125rem;
+}
+
+.menu_section_menu{
+    margin-top: 9.85rem;
+    display: grid;
+    grid-template-columns: 49.5rem 49.5rem;
+    grid-template-rows: 20.375rem 15.125rem;
+    row-gap: 6.75rem;
+    column-gap: 3.75rem;
+}
+
+.priceList h4{
+    text-align: end;
+    color: var(--000000, #000);
+    text-align: right;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Rufina;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4rem; 
+}
+
+.priceList h2{
+    color: var(--000000, #000);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Rufina;
+    font-size: 4.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 5.25rem;
+    margin-top: 1.35rem;
+
+}
+
+.priceList p{
+    color: var(--4D4D4D, #4D4D4D);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Lato;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.03rem;
+    margin-top: 1.5rem;
+}
