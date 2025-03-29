@@ -192,6 +192,8 @@ header .reservations_btn{
     justify-content: space-between;
 }
 
+/* MenuSection */
+
 .menu_section{
     display: flex;
     width: 120rem;
@@ -278,4 +280,56 @@ header .reservations_btn{
     line-height: 140%;
     letter-spacing: 0.03rem;
     margin-top: 1.5rem;
+}
+
+/* chefSection */
+
+.chef_section{
+    display: flex;
+    width: 120rem;
+    height: 70.625rem;
+    background-color: #ebf0e4;
+    background-image: url("../assets/leaves.png");
+    background-position: 1.42rem 4.5rem;
+    background-repeat: no-repeat;
+    background-size: 95%;
+}
+
+.chef_section_container{
+    overflow: hidden;
+    width: 103.5rem;
+    display: grid;
+    grid-template-columns: 60% 39.3%;
+    justify-content: space-between;
+    position: relative;
+    margin-left: 8rem;
+    margin-top: 13.875rem;
+}
+
+.chef_section_container img{
+    object-fit: cover;
+    margin-left: -0.5rem;
+    margin-top: 0.8rem;
+}
+
+.chef_section_text h3{
+    color: var(--000000, #000);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Rufina;
+    font-size: 6.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 7.5rem;
+}
+
+.chef_section_text p{
+    color: var(--4D4D4D, #4D4D4D);
+    font-feature-settings: 'liga' off, 'clig' off;
+    margin-top: 1.125rem;
+    font-family: Lato;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.03rem;
 }
