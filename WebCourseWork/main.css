@@ -377,3 +377,147 @@ header .reservations_btn{
     letter-spacing: 0.03rem;
     margin-top: 2.3rem;
 }
+
+/* Post section */
+
+.recent_post_section{
+    display: flex;
+    width: 120rem;
+    height: 97.5rem;
+}
+
+.recent_post_container{
+    display: grid;
+    grid-template-columns: 49.5rem 49.5rem;
+    grid-template-rows: 49.5rem 23.938rem;
+    row-gap: 4.25rem;
+    column-gap: 3.75rem;
+    width: 102.75rem;
+    height: 82.813rem;
+    margin-left: 8.625rem;
+    margin-top: 8.125rem;
+}
+
+.post_card_text{
+    width: 41rem;
+    height: 26rem;
+    margin-left: 3.85rem;
+    margin-top: 3.3rem;
+}
+
+.post_card_user{
+    display: flex;
+}
+
+.post_card_user_avatar{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.post_card_user_inf{
+    display: flex;
+    padding-left: 2rem;
+    padding-bottom: 0.25rem;
+    align-items: center;
+    gap: 2.031rem;
+}
+
+.post_card_user_inf li::marker{
+    font-size: 1.12rem;
+}
+
+.post_card_user li{
+    color: var(--5E6600, #5E6600);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Lato;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.023rem;
+}
+
+.post_card_comment{
+    margin-left: 0.7rem;
+    margin-top: 2.25rem;
+    display: flex;
+    width: 40.313rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.813rem;
+}
+
+.post_card_comment h4{
+    color: var(--000000, #000);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Rufina;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4rem;
+    width: 40.313rem;
+}
+
+.post_card_comment p{
+    color: var(--4D4D4D, #4D4D4D);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Lato;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 0.028rem;
+    margin-top: 0.43rem;
+}
+
+.post_card_readMore{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post_card_readMore a{
+    color: var(--000000, #000);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Lato;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.03rem;
+    text-decoration:  none;
+    padding-left: 0.65rem;
+    margin-top: 2rem;
+}
+
+.post_card_readMore a img{
+    padding-left: 0.3rem;
+    padding-top: 0.83rem;
+}
+
+.post_card_1{
+    position: relative;
+}
+
+.post_card_2{
+    position: relative;
+}
+
+.imgPost button{
+    position: absolute;
+    color: var(--FFFFFF, #FFF);
+    font-feature-settings: 'liga' off, 'clig' off;
+    background: var(--5E6600, #5E6600);
+    box-shadow: 0.063rem 0.063rem 0.75rem 0rem rgba(0, 0, 0, 0.08);
+    font-family: Rufina;
+    font-size: 1.625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3rem;
+    width: 12.688rem;
+    border: none;
+    top: 1.5%;
+    left: 72.8%;
+    height: 3.875rem;
+}
