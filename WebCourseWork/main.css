@@ -1,0 +1,641 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rufina:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rufina:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rufina:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Header */
+
+header {
+    height: 13rem;
+    width: 120rem;
+    display: flex;
+    background: var(--233000, #233000);
+}
+
+header .Logo {
+    width: 19.188rem;
+    height: 7.188rem;
+    margin-left: 7.375rem;
+    margin-top: 2.875rem;
+}
+
+header .NaviOpen {
+    width: 5.875rem;
+    height: 4.438rem;
+    margin-left: 2.813rem;
+    margin-top: 4.25rem;
+}
+
+header p {
+    width: 14.375rem;
+    height: 3.313rem;
+    color: var(--FFFFFF, #FFF);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Inter;
+    font-size: 1.625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 5.35rem;
+    letter-spacing: 0.03rem;
+    margin-left: 42.313rem;
+}
+
+header .reservations_btn {
+    width: 17.813rem;
+    height: 5.5rem;
+    font-family: Rufina;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3rem;
+    border: 2px solid var(--FFFFFF, #FFF);
+    background-color: transparent;
+    color: white;
+    margin-left: 1.625rem;
+    margin-top: 3.75rem;
+}
+
+/* Main */
+
+/* HeroSection */
+
+.hero_section {
+    width: 120rem;
+    height: 159.625rem;
+    background: var(--233000, #233000);
+}
+
+.headline_hero {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    width: 66.063rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3.125rem;
+    margin-left: 8.625rem;
+    margin-top: 6.375rem;
+}
+
+.headline_hero h1 {
+    z-index: 1;
+    align-self: stretch;
+    color: var(--FFFFFF, #FFF);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Rufina;
+    font-size: 9.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 9.5rem;
+}
+
+.headline_hero p {
+    width: 35.313rem;
+    color: var(--FFFFFF, #FFF);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Lato;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.03rem;
+}
+
+.hero_img {
+    max-width: 90rem;
+    position: absolute;
+    right: 6.5%;
+    top: 46.3%;
+    z-index: 1;
+}
+
+.hero_scroll_default {
+    margin-left: 8.7rem;
+    padding-top: 45.4rem;
+    width: 4rem;
+    height: 35.125rem;
+    flex-shrink: 0;
+}
+
+.hero_scroll_default h2 {
+    transform: rotate(90deg);
+    color: var(--FFFFFF, #FFF);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Rufina;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+.hero_scroll_default img {
+    margin-top: 5.25rem;
+    margin-left: 1.8rem;
+    width: 0.125rem;
+    height: 25.375rem;
+}
+
+.imageBox_first h2 {
+    width: 30.813rem;
+    height: 9.938rem;
+    color: var(--FFFFFF, #FFF);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Rufina;
+    font-size: 4.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 5.25rem;
+    margin-top: 3rem;
+}
+
+.imageBox_first p {
+    width: 35.313rem;
+    color: var(--FFFFFF, #FFF);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Lato;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.03rem;
+    margin-top: 3.5rem;
+}
+
+.ImageBox_second p {
+    width: 31.75rem;
+    color: var(--FFFFFF, #FFF);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Lato;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.03rem;
+}
+
+.ImageBox_second img {
+    margin-top: 5.25rem;
+}
+
+.imageBoxes {
+    display: grid;
+    width: 102.75rem;
+    height: 55.938rem;
+    margin-left: 8.625rem;
+    margin-top: 9.313rem;
+    grid-template-columns: 50% 31%;
+    justify-content: space-between;
+}
+
+/* MenuSection */
+
+.menu_section {
+    display: flex;
+    width: 120rem;
+    height: 89.625rem;
+    background-image: url("../assets/MenuImage.png");
+    background-position: 99.8% 0%;
+    background-repeat: no-repeat;
+    background-size: 46.2%;
+}
+
+.menu_container {
+    width: 102.75rem;
+    height: 65rem;
+    margin-top: 11rem;
+    margin-left: 8.625rem;
+}
+
+.menu_text {
+    width: 33.25rem;
+}
+
+.menu_text h3 {
+    color: var(--000000, #000);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Rufina;
+    font-size: 6.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 7.5rem;
+}
+
+.menu_text p {
+    color: var(--4D4D4D, #4D4D4D);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Lato;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.03rem;
+    margin-top: 1.125rem;
+}
+
+.menu_section_menu {
+    margin-top: 9.85rem;
+    display: grid;
+    grid-template-columns: 49.5rem 49.5rem;
+    grid-template-rows: 20.375rem 15.125rem;
+    row-gap: 6.75rem;
+    column-gap: 3.75rem;
+}
+
+.priceList h4 {
+    text-align: end;
+    color: var(--000000, #000);
+    text-align: right;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Rufina;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+.priceList h2 {
+    color: var(--000000, #000);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Rufina;
+    font-size: 4.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 5.25rem;
+    margin-top: 1.35rem;
+
+}
+
+.priceList p {
+    color: var(--4D4D4D, #4D4D4D);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Lato;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.03rem;
+    margin-top: 1.5rem;
+}
+
+/* chefSection */
+
+.chef_section {
+    display: flex;
+    width: 120rem;
+    height: 70.625rem;
+    background-color: #ebf0e4;
+    background-image: url("../assets/leaves.png");
+    background-position: 1.42rem 4.5rem;
+    background-repeat: no-repeat;
+    background-size: 95%;
+}
+
+.chef_section_container {
+    overflow: hidden;
+    width: 103.5rem;
+    display: grid;
+    grid-template-columns: 60% 39.3%;
+    justify-content: space-between;
+    position: relative;
+    margin-left: 8rem;
+    margin-top: 13.875rem;
+}
+
+.chef_section_container img {
+    object-fit: cover;
+    margin-left: -0.5rem;
+    margin-top: 0.8rem;
+}
+
+.chef_section_text h3 {
+    color: var(--000000, #000);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Rufina;
+    font-size: 6.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 7.5rem;
+}
+
+.chef_section_text p {
+    color: var(--4D4D4D, #4D4D4D);
+    font-feature-settings: 'liga' off, 'clig' off;
+    margin-top: 1.125rem;
+    font-family: Lato;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.03rem;
+}
+
+/* FeaturesSection */
+
+.features_section {
+    display: flex;
+    width: 120rem;
+    height: 54.188rem;
+}
+
+.features_content {
+    display: grid;
+    grid-template-columns: 31.75rem 31.75rem 31.75rem;
+    column-gap: 3.75rem;
+    width: 102.75rem;
+    height: 29.375rem;
+    text-align: center;
+    margin-left: 8.625rem;
+    margin-top: 12.938rem;
+}
+
+.feature h4 {
+    color: var(--000000, #000);
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Rufina;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4rem;
+    margin-top: 2.3rem;
+}
+
+.feature p {
+    color: var(--4D4D4D, #4D4D4D);
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Lato;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.03rem;
+    margin-top: 2.3rem;
+}
+
+/* Post section */
+
+.recent_post_section {
+    display: flex;
+    width: 120rem;
+    height: 97.5rem;
+}
+
+.recent_post_container {
+    display: grid;
+    grid-template-columns: 49.5rem 49.5rem;
+    grid-template-rows: 49.5rem 23.938rem;
+    row-gap: 4.25rem;
+    column-gap: 3.75rem;
+    width: 102.75rem;
+    height: 82.813rem;
+    margin-left: 8.625rem;
+    margin-top: 8.125rem;
+}
+
+.post_card_text {
+    width: 41rem;
+    height: 26rem;
+    margin-left: 3.85rem;
+    margin-top: 3.3rem;
+}
+
+.post_card_user {
+    display: flex;
+}
+
+.post_card_user_avatar {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.post_card_user_inf {
+    display: flex;
+    padding-left: 2rem;
+    padding-bottom: 0.25rem;
+    align-items: center;
+    gap: 2.031rem;
+}
+
+.post_card_user_inf li::marker {
+    font-size: 1.12rem;
+}
+
+.post_card_user li {
+    color: var(--5E6600, #5E6600);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Lato;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.023rem;
+}
+
+.post_card_comment {
+    margin-left: 0.7rem;
+    margin-top: 2.25rem;
+    display: flex;
+    width: 40.313rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.813rem;
+}
+
+.post_card_comment h4 {
+    color: var(--000000, #000);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Rufina;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4rem;
+    width: 40.313rem;
+}
+
+.post_card_comment p {
+    color: var(--4D4D4D, #4D4D4D);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Lato;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 0.028rem;
+    margin-top: 0.43rem;
+}
+
+.post_card_readMore {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post_card_readMore a {
+    color: var(--000000, #000);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Lato;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.03rem;
+    text-decoration: none;
+    padding-left: 0.65rem;
+    margin-top: 2rem;
+}
+
+.post_card_readMore a img {
+    padding-left: 0.3rem;
+    padding-top: 0.83rem;
+}
+
+.post_card_1 {
+    position: relative;
+}
+
+.post_card_2 {
+    position: relative;
+}
+
+.imgPost button {
+    position: absolute;
+    color: var(--FFFFFF, #FFF);
+    font-feature-settings: 'liga' off, 'clig' off;
+    background: var(--5E6600, #5E6600);
+    box-shadow: 0.063rem 0.063rem 0.75rem 0rem rgba(0, 0, 0, 0.08);
+    font-family: Rufina;
+    font-size: 1.625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3rem;
+    width: 12.688rem;
+    border: none;
+    top: 1.5%;
+    left: 72.8%;
+    height: 3.875rem;
+}
+
+/* Reservation section */
+
+.reservation_section {
+    display: flex;
+    width: 120rem;
+    height: 69.563rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 8.313rem;
+    background: var(--EBF0E4, #EBF0E4);
+}
+
+.reservation_container {
+    width: 103rem;
+    height: 39rem;
+    margin-top: 14.813rem;
+}
+
+.reservation_text {
+    width: 63rem;
+    height: 10.75rem;
+    margin-left: 20rem;
+}
+
+.reservation_text h3 {
+    color: var(--000000, #000);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Rufina;
+    font-size: 6.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 7.5rem;
+}
+
+.reservation_text p {
+    color: var(--4D4D4D, #4D4D4D);
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Lato;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.03rem;
+    margin-top: 1.125rem;
+}
+
+.reservation_form .reservation_inf {
+    display: grid;
+    grid-template-columns: 32.313rem 32.313rem 32.313rem;
+    column-gap: 3rem;
+    width: 102.75rem;
+    height: 6rem;
+    margin-top: 8.188rem;
+}
+
+.reservation_form input {
+    border: 0.125rem solid var(--000000, #000);
+    color: var(--000000, #000);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Lato;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.03px;
+    display: flex;
+    padding: 1.875rem 2.6rem;
+    background: transparent;
+}
+
+.reservation_form input::placeholder {
+    color: var(--000000, #000);
+}
+
+
+.reservation_form select {
+    display: flex;
+    padding: 1.875rem 2.375rem;
+    align-self: stretch;
+    color: var(--000000, #000);
+    font-feature-settings: 'liga' off, 'clig' off;
+    appearance: none;
+    background-image: url('../assets/Icon_angle-down.png');
+    background-position: right 2.5rem center;
+    background-repeat: no-repeat;
+    background: transparent;
+    font-family: Lato;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.03rem;
+}
+
+.reservation_form select {
+    border: 0.125rem solid var(--000000, #000);
+}
+
+.reservation_container button {
+    display: flex;
+    width: 21.75rem;
+    height: 5.625rem;
+    justify-content: center;
+    align-items: center;
+    border: 0.125rem solid var(--000000, #000);
+    background: var(--233000, #233000);
+    color: var(--FFFFFF, #FFF);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Rufina;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3rem;
+    margin-top: 8.313rem;
+    margin-left: 40.563rem;
+}
