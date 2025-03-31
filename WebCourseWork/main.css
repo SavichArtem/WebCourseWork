@@ -2,35 +2,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rufina:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rufina:wght@400;700&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
 /* Header */
 
-header{
+header {
     height: 13rem;
     width: 120rem;
     display: flex;
     background: var(--233000, #233000);
 }
 
-header .Logo{
+header .Logo {
     width: 19.188rem;
     height: 7.188rem;
     margin-left: 7.375rem;
     margin-top: 2.875rem;
 }
 
-header .NaviOpen{
+header .NaviOpen {
     width: 5.875rem;
     height: 4.438rem;
     margin-left: 2.813rem;
     margin-top: 4.25rem;
 }
 
-header p{
+header p {
     width: 14.375rem;
     height: 3.313rem;
     color: var(--FFFFFF, #FFF);
@@ -45,7 +45,7 @@ header p{
     margin-left: 42.313rem;
 }
 
-header .reservations_btn{
+header .reservations_btn {
     width: 17.813rem;
     height: 5.5rem;
     font-family: Rufina;
@@ -64,13 +64,13 @@ header .reservations_btn{
 
 /* HeroSection */
 
-.hero_section{
+.hero_section {
     width: 120rem;
     height: 159.625rem;
     background: var(--233000, #233000);
 }
 
-.headline_hero{
+.headline_hero {
     position: absolute;
     z-index: 2;
     display: flex;
@@ -82,7 +82,7 @@ header .reservations_btn{
     margin-top: 6.375rem;
 }
 
-.headline_hero h1{
+.headline_hero h1 {
     z-index: 1;
     align-self: stretch;
     color: var(--FFFFFF, #FFF);
@@ -94,7 +94,7 @@ header .reservations_btn{
     line-height: 9.5rem;
 }
 
-.headline_hero p{
+.headline_hero p {
     width: 35.313rem;
     color: var(--FFFFFF, #FFF);
     font-feature-settings: 'liga' off, 'clig' off;
@@ -106,7 +106,7 @@ header .reservations_btn{
     letter-spacing: 0.03rem;
 }
 
-.hero_img{
+.hero_img {
     max-width: 90rem;
     position: absolute;
     right: 6.5%;
@@ -114,7 +114,7 @@ header .reservations_btn{
     z-index: 1;
 }
 
-.hero_scroll_default{
+.hero_scroll_default {
     margin-left: 8.7rem;
     padding-top: 45.4rem;
     width: 4rem;
@@ -122,7 +122,7 @@ header .reservations_btn{
     flex-shrink: 0;
 }
 
-.hero_scroll_default h2{
+.hero_scroll_default h2 {
     transform: rotate(90deg);
     color: var(--FFFFFF, #FFF);
     font-feature-settings: 'liga' off, 'clig' off;
@@ -133,14 +133,14 @@ header .reservations_btn{
     line-height: 4rem;
 }
 
-.hero_scroll_default img{
+.hero_scroll_default img {
     margin-top: 5.25rem;
     margin-left: 1.8rem;
     width: 0.125rem;
     height: 25.375rem;
 }
 
-.imageBox_first h2{
+.imageBox_first h2 {
     width: 30.813rem;
     height: 9.938rem;
     color: var(--FFFFFF, #FFF);
@@ -153,7 +153,7 @@ header .reservations_btn{
     margin-top: 3rem;
 }
 
-.imageBox_first p{
+.imageBox_first p {
     width: 35.313rem;
     color: var(--FFFFFF, #FFF);
     font-feature-settings: 'liga' off, 'clig' off;
@@ -166,7 +166,7 @@ header .reservations_btn{
     margin-top: 3.5rem;
 }
 
-.ImageBox_second p{
+.ImageBox_second p {
     width: 31.75rem;
     color: var(--FFFFFF, #FFF);
     font-feature-settings: 'liga' off, 'clig' off;
@@ -178,11 +178,11 @@ header .reservations_btn{
     letter-spacing: 0.03rem;
 }
 
-.ImageBox_second img{
+.ImageBox_second img {
     margin-top: 5.25rem;
 }
 
-.imageBoxes{
+.imageBoxes {
     display: grid;
     width: 102.75rem;
     height: 55.938rem;
@@ -194,7 +194,7 @@ header .reservations_btn{
 
 /* MenuSection */
 
-.menu_section{
+.menu_section {
     display: flex;
     width: 120rem;
     height: 89.625rem;
@@ -204,18 +204,18 @@ header .reservations_btn{
     background-size: 46.2%;
 }
 
-.menu_container{
+.menu_container {
     width: 102.75rem;
     height: 65rem;
     margin-top: 11rem;
     margin-left: 8.625rem;
 }
 
-.menu_text{
+.menu_text {
     width: 33.25rem;
 }
 
-.menu_text h3{
+.menu_text h3 {
     color: var(--000000, #000);
     font-feature-settings: 'liga' off, 'clig' off;
     font-family: Rufina;
@@ -225,7 +225,7 @@ header .reservations_btn{
     line-height: 7.5rem;
 }
 
-.menu_text p{
+.menu_text p {
     color: var(--4D4D4D, #4D4D4D);
     font-feature-settings: 'liga' off, 'clig' off;
     font-family: Lato;
@@ -237,7 +237,7 @@ header .reservations_btn{
     margin-top: 1.125rem;
 }
 
-.menu_section_menu{
+.menu_section_menu {
     margin-top: 9.85rem;
     display: grid;
     grid-template-columns: 49.5rem 49.5rem;
@@ -246,7 +246,7 @@ header .reservations_btn{
     column-gap: 3.75rem;
 }
 
-.priceList h4{
+.priceList h4 {
     text-align: end;
     color: var(--000000, #000);
     text-align: right;
@@ -255,10 +255,10 @@ header .reservations_btn{
     font-size: 3rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 4rem; 
+    line-height: 4rem;
 }
 
-.priceList h2{
+.priceList h2 {
     color: var(--000000, #000);
     font-feature-settings: 'liga' off, 'clig' off;
     font-family: Rufina;
@@ -270,7 +270,7 @@ header .reservations_btn{
 
 }
 
-.priceList p{
+.priceList p {
     color: var(--4D4D4D, #4D4D4D);
     font-feature-settings: 'liga' off, 'clig' off;
     font-family: Lato;
@@ -284,7 +284,7 @@ header .reservations_btn{
 
 /* chefSection */
 
-.chef_section{
+.chef_section {
     display: flex;
     width: 120rem;
     height: 70.625rem;
@@ -295,7 +295,7 @@ header .reservations_btn{
     background-size: 95%;
 }
 
-.chef_section_container{
+.chef_section_container {
     overflow: hidden;
     width: 103.5rem;
     display: grid;
@@ -306,13 +306,13 @@ header .reservations_btn{
     margin-top: 13.875rem;
 }
 
-.chef_section_container img{
+.chef_section_container img {
     object-fit: cover;
     margin-left: -0.5rem;
     margin-top: 0.8rem;
 }
 
-.chef_section_text h3{
+.chef_section_text h3 {
     color: var(--000000, #000);
     font-feature-settings: 'liga' off, 'clig' off;
     font-family: Rufina;
@@ -322,7 +322,7 @@ header .reservations_btn{
     line-height: 7.5rem;
 }
 
-.chef_section_text p{
+.chef_section_text p {
     color: var(--4D4D4D, #4D4D4D);
     font-feature-settings: 'liga' off, 'clig' off;
     margin-top: 1.125rem;
@@ -336,13 +336,13 @@ header .reservations_btn{
 
 /* FeaturesSection */
 
-.features_section{
+.features_section {
     display: flex;
     width: 120rem;
     height: 54.188rem;
 }
 
-.features_content{
+.features_content {
     display: grid;
     grid-template-columns: 31.75rem 31.75rem 31.75rem;
     column-gap: 3.75rem;
@@ -353,7 +353,7 @@ header .reservations_btn{
     margin-top: 12.938rem;
 }
 
-.feature h4{
+.feature h4 {
     color: var(--000000, #000);
     text-align: center;
     font-feature-settings: 'liga' off, 'clig' off;
@@ -365,7 +365,7 @@ header .reservations_btn{
     margin-top: 2.3rem;
 }
 
-.feature p{
+.feature p {
     color: var(--4D4D4D, #4D4D4D);
     text-align: center;
     font-feature-settings: 'liga' off, 'clig' off;
@@ -380,13 +380,13 @@ header .reservations_btn{
 
 /* Post section */
 
-.recent_post_section{
+.recent_post_section {
     display: flex;
     width: 120rem;
     height: 97.5rem;
 }
 
-.recent_post_container{
+.recent_post_container {
     display: grid;
     grid-template-columns: 49.5rem 49.5rem;
     grid-template-rows: 49.5rem 23.938rem;
@@ -398,24 +398,24 @@ header .reservations_btn{
     margin-top: 8.125rem;
 }
 
-.post_card_text{
+.post_card_text {
     width: 41rem;
     height: 26rem;
     margin-left: 3.85rem;
     margin-top: 3.3rem;
 }
 
-.post_card_user{
+.post_card_user {
     display: flex;
 }
 
-.post_card_user_avatar{
+.post_card_user_avatar {
     align-items: center;
     display: flex;
     justify-content: center;
 }
 
-.post_card_user_inf{
+.post_card_user_inf {
     display: flex;
     padding-left: 2rem;
     padding-bottom: 0.25rem;
@@ -423,11 +423,11 @@ header .reservations_btn{
     gap: 2.031rem;
 }
 
-.post_card_user_inf li::marker{
+.post_card_user_inf li::marker {
     font-size: 1.12rem;
 }
 
-.post_card_user li{
+.post_card_user li {
     color: var(--5E6600, #5E6600);
     font-feature-settings: 'liga' off, 'clig' off;
     font-family: Lato;
@@ -438,7 +438,7 @@ header .reservations_btn{
     letter-spacing: 0.023rem;
 }
 
-.post_card_comment{
+.post_card_comment {
     margin-left: 0.7rem;
     margin-top: 2.25rem;
     display: flex;
@@ -448,7 +448,7 @@ header .reservations_btn{
     gap: 0.813rem;
 }
 
-.post_card_comment h4{
+.post_card_comment h4 {
     color: var(--000000, #000);
     font-feature-settings: 'liga' off, 'clig' off;
     font-family: Rufina;
@@ -459,7 +459,7 @@ header .reservations_btn{
     width: 40.313rem;
 }
 
-.post_card_comment p{
+.post_card_comment p {
     color: var(--4D4D4D, #4D4D4D);
     font-feature-settings: 'liga' off, 'clig' off;
     font-family: Lato;
@@ -471,13 +471,13 @@ header .reservations_btn{
     margin-top: 0.43rem;
 }
 
-.post_card_readMore{
+.post_card_readMore {
     display: inline-flex;
     justify-content: center;
     align-items: center;
 }
 
-.post_card_readMore a{
+.post_card_readMore a {
     color: var(--000000, #000);
     font-feature-settings: 'liga' off, 'clig' off;
     font-family: Lato;
@@ -486,25 +486,25 @@ header .reservations_btn{
     font-weight: 400;
     line-height: 140%;
     letter-spacing: 0.03rem;
-    text-decoration:  none;
+    text-decoration: none;
     padding-left: 0.65rem;
     margin-top: 2rem;
 }
 
-.post_card_readMore a img{
+.post_card_readMore a img {
     padding-left: 0.3rem;
     padding-top: 0.83rem;
 }
 
-.post_card_1{
+.post_card_1 {
     position: relative;
 }
 
-.post_card_2{
+.post_card_2 {
     position: relative;
 }
 
-.imgPost button{
+.imgPost button {
     position: absolute;
     color: var(--FFFFFF, #FFF);
     font-feature-settings: 'liga' off, 'clig' off;
@@ -520,4 +520,122 @@ header .reservations_btn{
     top: 1.5%;
     left: 72.8%;
     height: 3.875rem;
+}
+
+/* Reservation section */
+
+.reservation_section {
+    display: flex;
+    width: 120rem;
+    height: 69.563rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 8.313rem;
+    background: var(--EBF0E4, #EBF0E4);
+}
+
+.reservation_container {
+    width: 103rem;
+    height: 39rem;
+    margin-top: 14.813rem;
+}
+
+.reservation_text {
+    width: 63rem;
+    height: 10.75rem;
+    margin-left: 20rem;
+}
+
+.reservation_text h3 {
+    color: var(--000000, #000);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Rufina;
+    font-size: 6.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 7.5rem;
+}
+
+.reservation_text p {
+    color: var(--4D4D4D, #4D4D4D);
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Lato;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.03rem;
+    margin-top: 1.125rem;
+}
+
+.reservation_form .reservation_inf {
+    display: grid;
+    grid-template-columns: 32.313rem 32.313rem 32.313rem;
+    column-gap: 3rem;
+    width: 102.75rem;
+    height: 6rem;
+    margin-top: 8.188rem;
+}
+
+.reservation_form input {
+    border: 0.125rem solid var(--000000, #000);
+    color: var(--000000, #000);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Lato;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.03px;
+    display: flex;
+    padding: 1.875rem 2.6rem;
+    background: transparent;
+}
+
+.reservation_form input::placeholder {
+    color: var(--000000, #000);
+}
+
+
+.reservation_form select {
+    display: flex;
+    padding: 1.875rem 2.375rem;
+    align-self: stretch;
+    color: var(--000000, #000);
+    font-feature-settings: 'liga' off, 'clig' off;
+    appearance: none;
+    background-image: url('../assets/Icon_angle-down.png');
+    background-position: right 2.5rem center;
+    background-repeat: no-repeat;
+    background: transparent;
+    font-family: Lato;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.03rem;
+}
+
+.reservation_form select {
+    border: 0.125rem solid var(--000000, #000);
+}
+
+.reservation_container button {
+    display: flex;
+    width: 21.75rem;
+    height: 5.625rem;
+    justify-content: center;
+    align-items: center;
+    border: 0.125rem solid var(--000000, #000);
+    background: var(--233000, #233000);
+    color: var(--FFFFFF, #FFF);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Rufina;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3rem;
+    margin-top: 8.313rem;
+    margin-left: 40.563rem;
 }
