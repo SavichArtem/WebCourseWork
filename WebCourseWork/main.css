@@ -639,3 +639,107 @@ header .reservations_btn {
     margin-top: 8.313rem;
     margin-left: 40.563rem;
 }
+
+/* Category section */
+
+.category_section {
+    display: flex;
+    width: 120rem;
+    height: 87.125rem;
+}
+
+.category_section_container {
+    width: 102.75rem;
+    height: 70.625rem;
+    margin-left: 8.625rem;
+    margin-top: 8rem;
+}
+
+.category_section_text {
+    display: flex;
+    width: 68.813rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.125rem;
+    margin-left: 16.938rem;
+}
+
+.category_section_text h2 {
+    color: var(--000000, #000);
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Rufina;
+    font-size: 6.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 7.5rem;
+}
+
+.category_section_text p {
+    color: var(--4D4D4D, #4D4D4D);
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Lato;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.03rem;
+}
+
+.category_section_blocks {
+    display: grid;
+    grid-template-columns: 31.75rem 31.75rem 31.75rem;
+    column-gap: 3.75rem;
+    margin-top: 7.875rem;
+}
+
+.category_section_blocks a {
+    color: var(--233000, #233000);
+    font-feature-settings: 'liga' off, 'clig' off;
+    margin-left: 2.5rem;
+    font-family: Rufina;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4rem;
+    margin-top: 3rem;
+    height: 3.125rem;
+    width: 31.25rem;
+    text-decoration: none;
+}
+
+.block_inf{
+    display: flex;
+    background: var(--Gradient, linear-gradient(178deg, rgba(35, 48, 0, 0.20) 2.02%, rgba(35, 48, 0, 0.00) 97.98%));
+    position: absolute;
+    z-index: 100;
+    left: 0rem;
+    top: 0rem;
+    width: 31.75rem;
+    height: 10rem;
+    flex-shrink: 0;
+}
+
+.category_section_blocks a img {
+    position: absolute;
+    margin-left: 14.75rem;
+    margin-bottom: 4.8rem;
+}
+
+.first_block {
+    position: relative;
+}
+
+.first_block a img {
+    margin-left: 12.2rem;
+}
+
+.second_block {
+    position: relative;
+}
+
+.third_block {
+    position: relative;
+}
