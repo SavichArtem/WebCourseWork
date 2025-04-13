@@ -4,12 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FoodZero</title>
+    
     <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="../theme.css" />
+
+    <script defer src="../js/night-theme.js"></script>
   </head>
   <body>
+    <script>
+      const theme = localStorage.getItem("theme")
+      if(theme){
+        document.body.classList.add(theme)
+      }
+    </script>
     <header>
       <img src="./assets/Logo.png" alt="Logo" class="Logo" />
       <img src="./assets/NaviOpen.svg" alt="NaviOpen" class="NaviOpen" />
+      <button class="night-theme-btn" id="night-theme-btn">
+        <img src="./assets/Moon.svg" alt="Moon" class="moon">
+        <img src="./assets/sun.png" alt="Sun" class="sun">
+      </button>
       <p>+86 852 346 000</p>
       <button class="reservations_btn">Reservations</button>
     </header>
@@ -150,12 +164,9 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               </article>
               <article class="post_card_readMore">
-                <a href=""
-                  >Read More
-                  <img
-                    src="./assets/Icon_arrow-right.png"
-                    alt="Icon_arrow-right"
-                /></a>
+                <a href="">Read More
+                  <img src="./assets/Icon_arrow-right.png" alt="Icon_arrow-right"/>
+                </a>
               </article>
             </article>
           </article>
@@ -182,12 +193,10 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               </article>
               <article class="post_card_readMore">
-                <a href=""
-                  >Read More
-                  <img
-                    src="./assets/Icon_arrow-right.png"
-                    alt="Icon_arrow-right"
-                /></a>
+                <a href="">
+                  Read More
+                  <img src="./assets/Icon_arrow-right.png" alt="Icon_arrow-right"/>
+                </a>
               </article>
             </article>
           </article>
@@ -201,13 +210,7 @@
           </article>
           <form class="reservation_form">
             <article class="reservation_inf">
-              <input
-                type="input"
-                name="date"
-                placeholder="16/22/2021"
-                id="date"
-                onfocus="(this.type='date')"
-              />
+              <input type="input" name="date" placeholder="16/22/2021" id="date" onfocus="(this.type='date')"/>
               <select name="time_option" id="timeSelect" type="time">
                 <option value="1">6:00 pm</option>
                 <option value="2">7:00 pm</option>
