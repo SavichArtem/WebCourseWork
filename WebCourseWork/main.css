@@ -32,7 +32,7 @@ header .NaviOpen {
     margin-top: 4.25rem;
 }
 
-header .night-theme-btn{
+header .night-theme-btn {
     border: none;
     outline: none;
     position: absolute;
@@ -40,7 +40,7 @@ header .night-theme-btn{
     width: 3.75rem;
     height: 3.75rem;
     margin-left: 72.313rem;
-    margin-top: 4.938rem;   
+    margin-top: 4.938rem;
 }
 
 header .moon {
@@ -67,7 +67,7 @@ header .moon:hover {
     cursor: pointer;
 }
 
-header .sun:hover{
+header .sun:hover {
     filter: brightness(150%);
     cursor: pointer;
 }
@@ -890,4 +890,164 @@ header .reservations_btn {
     font-style: normal;
     font-weight: 700;
     line-height: 3rem;
+}
+
+/* Footer */
+
+footer {
+    width: 120rem;
+    height: 41.938rem;
+    background: var(--233000, #233000);
+}
+
+footer .footer_container {
+    height: 16.3rem;
+    display: flex;
+    padding-top: 7.2rem;
+    align-items: center;
+    width: 103rem;
+    margin-left: 8.7rem;
+}
+
+.footer_logo h2 {
+    width: 11.75rem;
+    color: var(--FFFFFF, #FFF);
+    font-family: Rufina;
+    font-size: 4.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.footer_content {
+    margin-left: 14.85rem;
+}
+
+.footer h5 {
+    margin-top: 0.2rem;
+    color: var(--FFFFFF, #FFF);
+    font-family: Rufina;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3rem;
+}
+
+.footer_content_phone {
+    width: 14rem;
+    margin-top: 3.438rem;
+    color: var(--FFFFFF, #FFF);
+    font-family: Montserrat;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.563rem;
+    letter-spacing: 0.023rem;
+}
+
+.footer_content_address {
+    width: 13.125rem;
+    margin-top: 1.75rem;
+    color: var(--FFFFFF, #FFF);
+    font-family: Montserrat;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.563rem;
+    letter-spacing: 0.023rem;
+}
+
+.footer_form {
+    margin-left: 12.6rem;
+    display: grid;
+    grid-template-rows: 3.375rem 5.938rem 1.063rem;
+    row-gap: 2.188rem;
+}
+
+.footer_form_box {
+    display: flex;
+    gap: 1.688rem;
+    height: 5.625rem;
+}
+
+.footer_form p {
+    color: var(--FFFFFF, #FFF);
+    font-family: Montserrat;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.018rem;
+    width: 28.125rem;
+}
+
+.footer_form_box input {
+    display: flex;
+    width: 32.5rem;
+    height: 5.75rem;
+    background-color: transparent;
+    border: 0.125rem solid var(--FFFFFF, #FFF);
+}
+
+.footer_form_box input::placeholder {
+    color: var(--FFFFFF, #FFF);
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    height: 2.188rem;
+    padding-left: 2.4rem;
+    width: 25rem;
+    letter-spacing: 0.03rem;
+}
+
+.footer_form_box button {
+    padding: 1.25rem 2.875rem;
+    margin-top: 0.1rem;
+    justify-content: center;
+    align-items: center;
+    color: var(--FFFFFF, #FFF);
+    background: var(--5E6600, #5E6600);
+    border: none;
+    font-family: Rufina;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3rem;
+}
+
+.footer_line_img{
+    padding-top: 7.6rem;
+}
+
+.footer_copyright{
+    width: 120rem;
+    margin-top: 3.5rem;
+}
+
+.footer_copyright_container{
+    display: flex;
+    padding-left: 8.625rem;
+
+}
+
+.footer_copyright_container p{
+    color: var(--FFFFFF, #FFF);
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; 
+    letter-spacing: 0.03rem;
+}
+
+.footer_copyright_icons{
+    display: flex;
+    margin-left: 61.563rem;
+    gap: 1.75rem;
+}
+
+.footer_copyright_icons img{
+    width: 1.75rem;
+    height: 1.75rem;
 }
