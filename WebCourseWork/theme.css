@@ -11,6 +11,14 @@ header{
     transition: background-color .4s, color .4s;
 }
 
+body.night-theme footer{
+    background-color: #000000;
+}
+
+footer{
+    transition: background-color .4s, color .4s;    
+}
+
 body.night-theme header{
     background-color: #191919;
 
