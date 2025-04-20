@@ -808,7 +808,7 @@ header .reservations_btn {
     height: 30rem;
 }
 
-.testimonials_swiper_wrapper::before {
+.swiper-slide::before {
     content: '';
     background: url('./assets/”.png');
     background-repeat: no-repeat;
@@ -818,6 +818,8 @@ header .reservations_btn {
     width: 17.625rem;
     left: 73.5rem;
 }
+
+
 
 .testimotional .testimonial_text {
     width: 78.875rem;
@@ -874,14 +876,14 @@ header .reservations_btn {
 
 .testimonials_control {
     display: inline-flex;
-    width: 15.625rem;
+    width: 15rem;
     height: 3rem;
     align-items: center;
     gap: 2.5rem;
     flex-shrink: 0;
     position: absolute;
-    left: 86.1%;
-    top: 70.5%;
+    left: 82.8%;
+    top: 67.5%;
     margin-bottom: 50rem;
     color: var(--000000, #000);
     font-feature-settings: 'liga' off, 'clig' off;
@@ -890,6 +892,15 @@ header .reservations_btn {
     font-style: normal;
     font-weight: 700;
     line-height: 3rem;
+}
+
+.swiper {
+    width: 1502px;
+    height: 500px;
+  }
+
+.swiper .swiper-pagination{
+    top: 1%;
 }
 
 /* Footer */

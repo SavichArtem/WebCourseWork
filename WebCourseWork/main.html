@@ -10,6 +10,9 @@
 
     <script defer src="../js/night-theme.js"></script>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <link rel="icon" type="image/png" href="../favicons/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="../favicons/favicon.svg" />
     <link rel="shortcut icon" href="../favicons/favicon.ico" />
@@ -277,9 +280,9 @@
         </article>
       </section>
       <section class="testimonials">
-          <article class="testimonials_swiper">
-            <article class="testimonials_swiper_wrapper">
-              <article class="testimotional">
+          <article class="testimonials_swiper swiper">
+            <article class="testimonials_swiper_wrapper swiper-wrapper">
+              <article class="testimotional swiper-slide">
                 <p class="testimonial_text">“ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus lorem id penatibus imperdiet. Turpis egestas ultricies purus   &nbspLorem ipsum dolor sit amet.</p>
                 <article class="testimonials_client">
                   <img src="./assets/Client_avatar.png" alt="Client_avatar">
@@ -289,11 +292,65 @@
                   </article>
                 </article>
               </article>
+              <article class="testimotional swiper-slide">
+                <p class="testimonial_text">“ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus lorem id penatibus imperdiet. Turpis egestas ultricies purus   &nbspLorem ipsum dolor sit amet.</p>
+                <article class="testimonials_client">
+                  <img src="./assets/Client_avatar2.png" alt="Client_avatar">
+                  <article class="testimonials_client_inf">
+                    <h4>Lydia Bradley</h4>
+                    <p>Photographer</p>
+                  </article>
+                </article>
+              </article>
+              <article class="testimotional swiper-slide">
+                <p class="testimonial_text">“ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus lorem id penatibus imperdiet. Turpis egestas ultricies purus   &nbspLorem ipsum dolor sit amet.</p>
+                <article class="testimonials_client">
+                  <img src="./assets/Client_avatar3.png" alt="Client_avatar">
+                  <article class="testimonials_client_inf">
+                    <h4>Greta Ray</h4>
+                    <p>Designer</p>
+                  </article>
+                </article>
+              </article>
+              <article class="testimotional swiper-slide">
+                <p class="testimonial_text">“ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus lorem id penatibus imperdiet. Turpis egestas ultricies purus   &nbspLorem ipsum dolor sit amet.</p>
+                <article class="testimonials_client">
+                  <img src="./assets/Client_avatar4.png" alt="Client_avatar">
+                  <article class="testimonials_client_inf">
+                    <h4>Maggie Clay</h4>
+                    <p>Bloger</p>
+                  </article>
+                </article>
+              </article>
+              <article class="testimotional swiper-slide">
+                <p class="testimonial_text">“ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus lorem id penatibus imperdiet. Turpis egestas ultricies purus   &nbspLorem ipsum dolor sit amet.</p>
+                <article class="testimonials_client">
+                  <img src="./assets/Client_avatar5.png" alt="Client_avatar">
+                  <article class="testimonials_client_inf">
+                    <h4>Lena Stuart</h4>
+                    <p>Producer</p>
+                  </article>
+                </article>
+              </article>
+              <article class="testimotional swiper-slide">
+                <p class="testimonial_text">“ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus lorem id penatibus imperdiet. Turpis egestas ultricies purus   &nbspLorem ipsum dolor sit amet.</p>
+                <article class="testimonials_client">
+                  <img src="./assets/Client_avatar6.png" alt="Client_avatar">
+                  <article class="testimonials_client_inf">
+                    <h4>Nancy Dunn</h4>
+                    <p>Photographer</p>
+                  </article>
+                </article>
+              </article>
             </article>
             <article class="testimonials_control">
-              <img src="./assets/Icon_arrow-left.png" alt="Icon_arrow-left">
-              2 / 6
-              <img src="./assets/Icon_arrow-right.png" alt="Icon_arrow-right">
+              <div class="swiper-pagination"></div>
+              <article class="swiper-button-prev">
+                <img src="./assets/Icon_arrow-left.png" alt="Icon_arrow-left">
+              </article>
+              <article class="swiper-button-next">
+                <img src="./assets/Icon_arrow-right.png" alt="Icon_arrow-right">
+              </article>
             </article>
         </article>
       </section>
@@ -339,5 +396,6 @@
           </article>
       </article>
     </footer>
+    <script src="./js/swiper.js"></script>
   </body>
 </html>
