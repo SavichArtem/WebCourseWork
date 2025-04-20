@@ -876,7 +876,7 @@ header .reservations_btn {
 
 .testimonials_control {
     display: inline-flex;
-    width: 15rem;
+    width: 14.7rem;
     height: 3rem;
     align-items: center;
     gap: 2.5rem;
@@ -901,6 +901,7 @@ header .reservations_btn {
 
 .swiper .swiper-pagination{
     top: 1%;
+    width: 14.5rem;
 }
 
 /* Footer */
