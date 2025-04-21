@@ -694,7 +694,7 @@ header .reservations_btn {
     background-image: url('../assets/Icon_angle-down.png');
     background-position: right 2.5rem center;
     background-repeat: no-repeat;
-    background: transparent;
+    background-color: #EBF0E4;
     font-family: "Montserrat", sans-serif;
     font-size: 1.5rem;
     font-style: normal;
