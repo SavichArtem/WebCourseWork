@@ -141,6 +141,7 @@ header .reservations_btn {
 /* HeroSection */
 
 .hero_section {
+    position: relative;
     width: 120rem;
     height: 159.625rem;
     background: var(--233000, #233000);
@@ -185,8 +186,8 @@ header .reservations_btn {
 .hero_img {
     max-width: 90rem;
     position: absolute;
-    right: 6.5%;
-    top: 46.3%;
+    right: 7.2%;
+    top: 8.8%;
     z-index: 1;
 }
 
@@ -264,7 +265,7 @@ header .reservations_btn {
     height: 55.938rem;
     margin-left: 8.625rem;
     margin-top: 9.313rem;
-    grid-template-columns: 50% 31%;
+    grid-template-columns: 50% 30.9%;
     justify-content: space-between;
 }
 
