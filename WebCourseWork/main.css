@@ -72,6 +72,40 @@ header .sun:hover {
     cursor: pointer;
 }
 
+header .header_btn{
+    display: flex;
+    width: 3.875rem;
+    height: 4rem;
+    color: #FFF;
+    font-family: Rufina;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4rem; /* 133.333% */
+    border: none;
+    margin-left: 1.75rem;
+    margin-top: 4.5rem;
+    background-color: transparent;
+}
+
+header .header-basket-btn{
+    width: 3.563rem;
+    height: 3.313rem;
+    background-color: transparent;
+    border: none;
+    margin-left: 14.688rem;
+    margin-top: 4.938rem;
+}
+
+header .poor-vision-version-btn{
+    width: 3.875rem;
+    height: 3.313rem;
+    background: transparent;
+    border: none;
+    margin-left: 1.813rem;
+    margin-top: 4.938rem;
+}
+
 header p {
     width: 14.375rem;
     height: 3.313rem;
@@ -84,7 +118,7 @@ header p {
     line-height: normal;
     margin-top: 5.35rem;
     letter-spacing: 0.03rem;
-    margin-left: 42.313rem;
+    margin-left: 7.15rem;
 }
 
 header .reservations_btn {
@@ -98,7 +132,7 @@ header .reservations_btn {
     border: 2px solid var(--FFFFFF, #FFF);
     background-color: transparent;
     color: white;
-    margin-left: 1.625rem;
+    margin-left: 1.47rem;
     margin-top: 3.75rem;
 }
 
@@ -287,6 +321,14 @@ header .reservations_btn {
     grid-template-rows: 20.375rem 15.125rem;
     row-gap: 6.75rem;
     column-gap: 3.75rem;
+}
+
+.priceList .product_basket{
+    position: absolute;
+    width: 3.563rem;
+    height: 3.313rem;
+    margin-left: 37.063rem;
+    margin-top: 0.75rem;
 }
 
 .priceList h4 {
