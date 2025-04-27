@@ -74,9 +74,10 @@ header .sun:hover {
 
 header .header_btn{
     display: flex;
+    cursor:pointer;
     width: 3.875rem;
     height: 4rem;
-    color: #FFF;
+    color: white;
     font-family: Rufina;
     font-size: 3rem;
     font-style: normal;
@@ -86,6 +87,11 @@ header .header_btn{
     margin-left: 1.75rem;
     margin-top: 4.5rem;
     background-color: transparent;
+}
+
+.header_btn_active,
+.header_btn:hover{
+    text-shadow: 0 0 15px;
 }
 
 header .header-basket-btn{
@@ -574,12 +580,12 @@ header .reservations_btn {
     letter-spacing: 0.03rem;
     text-decoration: none;
     padding-left: 0.65rem;
-    margin-top: 2rem;
+    margin-top: 2.8rem;
 }
 
-.post_card_readMore a img {
-    padding-left: 0.3rem;
-    padding-top: 0.83rem;
+.post_card_readMore img {
+    padding-left: 0.5rem;
+    padding-top: 2.7rem;
 }
 
 .post_card_1 {
@@ -806,6 +812,12 @@ header .reservations_btn {
     width: 31.75rem;
     height: 10rem;
     flex-shrink: 0;
+}
+
+.block_inf img{
+    position: absolute;
+    margin-left: 25.7rem;
+    margin-top: 3rem;    
 }
 
 .category_section_blocks a img {
