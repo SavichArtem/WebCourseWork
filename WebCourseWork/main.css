@@ -1054,6 +1054,13 @@ footer .footer_container {
     height: 5.75rem;
     background-color: transparent;
     border: 0.125rem solid var(--FFFFFF, #FFF);
+    color: var(--FFFFFF, #FFF);
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.03rem;
 }
 
 .footer_form_box input::placeholder {
@@ -1065,6 +1072,16 @@ footer .footer_container {
     height: 2.188rem;
     padding-left: 2.4rem;
     width: 25rem;
+    letter-spacing: 0.03rem;
+}
+
+.footer_form_box input:focus{
+    color: var(--FFFFFF, #FFF);
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
     letter-spacing: 0.03rem;
 }
 
