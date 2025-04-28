@@ -292,4 +292,36 @@ export const homePageText = {
         en: "Email Address",
     },
 
+    "nav_text1": {
+        ru: "ГЛАВНАЯ",
+        en: "HOME",
+    },
+    "nav_text2": {
+        ru: "МЕНЮ",
+        en: "MENU",
+    },
+    "nav_text3": {
+        ru: "БЛОГИ",
+        en: "BLOGS",
+    },
+    "nav_text4": {
+        ru: "1 Колонка",
+        en: "1 Column",
+    },
+    "nav_text5": {
+        ru: "2 Колонки",
+        en: "2 Columns",
+    },
+    "nav_text6": {
+        ru: "О НАС",
+        en: "ABOUT",
+    },
+    "nav_text7": {
+        ru: "КОНТАКТЫ",
+        en: "CONTACT",
+    },
+    "nav_text8": {
+        ru: "Связь",
+        en: "Contact",
+    },
 }

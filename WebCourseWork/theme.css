@@ -56,6 +56,15 @@ body.night-theme a{
     color: white;
 }
 
+body.night-theme .navigation .navigation-item-active a{
+    color: #9CAA00;
+}
+
+body.night-theme .navigation {
+    background-image: url(../assets/nav_dark.png);
+}
+
+
 body.night-theme li{
     color: white;
 }

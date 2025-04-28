@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../main.css" />
     <link rel="stylesheet" href="../theme.css" />
     <link rel="stylesheet" href="../preloader.css">
-
+    <link rel="stylesheet" href="../navigation.css">
     <script defer src="../js/night-theme.js"></script>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
@@ -33,9 +33,46 @@
     <div class="mask">
       <div class="loader"></div>
     </div>
+    <div id="myNav" class="navigation">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="./assets/NaviClose.png" alt="NaviClose"></a>
+      <div class="navigation-content">
+          <ul class="navigation-ul">
+              <li class="navigation-item-active"><a href="./main.html" data-lang="nav_text1">Home</a></li>
+              <li class="navigation-item"><a href="./menu.html" data-lang="nav_text2">Menu</a></li>
+              <li class="navigation-item navigation-item-blogs"><a href="" data-lang="nav_text3">Blogs</a>
+                  <ul class="navigation-blogs">
+                      <li><a href="" data-lang="nav_text4">1 Column</a></li>
+                      <li><a href="" data-lang="nav_text5">2 Columns</a></li>
+                  </ul>
+              </li>
+              <li class="navigation-item"><a href="" data-lang="nav_text6">About</a></li>
+              <li class="navigation-item"><a href="" data-lang="nav_text7">Contact</a></li>
+          </ul>
+      </div>
+      <div class="navigation-socials">
+          <div class="navigation-socials-text">
+              <h3 data-lang="nav_text8">Contact</h3>
+              <img src="./assets/LineNav.png" alt="LineNav">
+          </div>
+          <div class="navigation-socials-phone">
+              <p>+86 852 346 000</p>
+              <p>info@foodzero.com</p>
+          </div>
+          <div class="navigation-socials-address">
+              <p>1959 Sepulveda Blvd. </p>
+              <p>Culver City, CA, 90230</p>
+          </div>
+          <ul class="navigation-socials-list">
+              <li class="navigation-social-item"><a href="https://www.instagram.com/"><img src="./assets/Icon_instagram.svg" alt="Icon_instagram"></a></li>
+              <li class="navigation-social-item"><a href="https://x.com/"><img src="./assets/Icon_twitter.svg" alt="Icon_twitter"></a></li>
+              <li class="navigation-social-item"><a href="https://www.facebook.com/"><img src="./assets/Icon_facebook.svg" alt="Icon_facebook"></a></li>
+              <li class="navigation-social-item"><a href="https://www.youtube.com/"><img src="./assets/Icon_youtube.svg" alt="Icon_youtube"></a></li>
+          </ul>
+      </div>
+  </div>
     <header>
       <img src="./assets/Logo.png" alt="Logo" class="Logo" />
-      <img src="./assets/NaviOpen.svg" alt="NaviOpen" class="NaviOpen" />
+      <img src="./assets/NaviOpen.svg" alt="NaviOpen" onclick="openNav()" class="nav-btn" />
       <button class="night-theme-btn" id="night-theme-btn">
         <img src="./assets/Moon.svg" alt="Moon" class="moon">
         <img src="./assets/sun.png" alt="Sun" class="sun">
@@ -49,7 +86,7 @@
       <button class="header_btn" data-btn="ru">Ru</button>
       <button class="header_btn" data-btn="en">En</button>
       <p>+86 852 346 000</p>
-      <button class="reservations_btn" data-lang="header_text">Reservations</button>
+      <button class="reservations_btn" data-lang="header_text">Reservation</button>
     </header>
     <main>
       <section class="hero_section">
@@ -397,6 +434,7 @@
       </article>
     </footer>
     <script src="./js/changeLanguage.js" type="module"></script>
+    <script src="./js/navigation.js"></script>
     <script src="./js/swiper.js"></script>
     <script src="./js/preloader.js"></script>
   </body>
