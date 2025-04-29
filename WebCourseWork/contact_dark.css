@@ -25,24 +25,16 @@ footer{
 }
 
 body.night-theme .header_and_heroSection{
-    background-image: url(../assets/menu_background_dark.png); 
+    background-image: url(../assets/contact_background_dark.png); 
     transition: background-image .4s ease-in-out; 
 }
 
-body.night-theme .pastries_and_drinks_section{
-    background-image: url("../assets/Avocado_white.png");
+body.night-theme .reservation_background{
+    background-image: url(../assets/Mint_white.png);    
 }
 
-body.night-theme .starters_section{
-    background-image: url("../assets/Blueberry_white.png");
-}
-
-body.night-theme .product_basket{
-    filter: brightness(0) invert(1);
-}
-
-body.night-theme .menu_line{ 
-    filter: brightness(0) invert(1);
+body.night-theme .contact-address{
+    background-image: url(../assets/Orange_white.png);
 }
 
 body.night-theme h2,

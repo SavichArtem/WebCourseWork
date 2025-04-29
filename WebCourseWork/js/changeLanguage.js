@@ -6,6 +6,7 @@ let currentText = {};
 
 import { homePageText } from "./language_pages/languages_main-page.js";
 import { menuPageText } from "./language_pages/languages_menu-page.js";
+import { contactPageText } from "./language_pages/languages_contact-page.js";
 
 function checkPagePathName() {
     switch (currentPathName) {
@@ -14,6 +15,9 @@ function checkPagePathName() {
             break;
         case '/menu.html':
             currentText = menuPageText;
+            break;
+        case '/contact.html':
+            currentText = contactPageText;
             break;
         default:
             currentText = homePageText;
