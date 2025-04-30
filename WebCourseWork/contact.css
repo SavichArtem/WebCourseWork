@@ -9,10 +9,17 @@
     margin: 0;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 .header_and_heroSection {
     width: 120rem;
+    margin: 0 auto;
     height: 67.5rem;
     background-image: url(../assets/contact_background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* Header */
@@ -20,6 +27,7 @@
 header {
     height: 13rem;
     width: 120rem;
+    margin: 0 auto;
     display: flex;
 }
 
@@ -135,6 +143,7 @@ header .reservations_btn {
 
 .hero_section {
     width: 120rem;
+    margin: 0 auto;
     height: 54.5rem;
 }
 
@@ -228,6 +237,7 @@ header .reservations_btn {
 .contact-address {
     width: 120rem;
     height: 136.625rem;
+    margin: 0 auto;
     flex-shrink: 0;
     background-image: url(../assets/Orange.png);
     background-position: 52% 8.5%;
@@ -280,6 +290,7 @@ header .reservations_btn {
 .reservation_section {
     display: flex;
     width: 120rem;
+    margin: 0 auto;
     height: 67.375rem;
     flex-direction: column;
     align-items: center;
@@ -404,6 +415,7 @@ header .reservations_btn {
 
 footer {
     width: 120rem;
+    margin: 0 auto;
     height: 41.938rem;
     background: var(--233000, #233000);
 }

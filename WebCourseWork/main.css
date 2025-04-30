@@ -9,11 +9,16 @@
     margin: 0;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 /* Header */
 
 header {
     height: 13rem;
     width: 120rem;
+    margin: 0 auto;
     display: flex;
     background: var(--233000, #233000);
 }
@@ -148,6 +153,7 @@ header .reservations_btn {
 
 .hero_section {
     position: relative;
+    margin: 0 auto;
     width: 120rem;
     height: 159.625rem;
     background: var(--233000, #233000);
@@ -279,6 +285,7 @@ header .reservations_btn {
 
 .menu_section {
     display: flex;
+    margin: 0 auto;
     width: 120rem;
     height: 89.625rem;
     background-image: url("../assets/MenuImage.png");
@@ -378,6 +385,7 @@ header .reservations_btn {
 
 .chef_section {
     display: flex;
+    margin: 0 auto;
     width: 120rem;
     height: 70.625rem;
     background-color: #ebf0e4;
@@ -430,6 +438,7 @@ header .reservations_btn {
 
 .features_section {
     display: flex;
+    margin: 0 auto;
     width: 120rem;
     height: 54.188rem;
 }
@@ -474,6 +483,7 @@ header .reservations_btn {
 
 .recent_post_section {
     display: flex;
+    margin: 0 auto;
     width: 120rem;
     height: 97.5rem;
 }
@@ -617,6 +627,7 @@ header .reservations_btn {
 /* Reservation section */
 
 .reservation_section {
+    margin: 0 auto;
     display: flex;
     width: 120rem;
     height: 69.563rem;
@@ -736,6 +747,7 @@ header .reservations_btn {
 
 .category_section {
     display: flex;
+    margin: 0 auto;
     width: 120rem;
     height: 87.125rem;
 }
@@ -846,6 +858,7 @@ header .reservations_btn {
 
 .testimonials {
     display: flex;
+    margin: 0 auto;
     width: 120rem;
     height: 44.438rem;
 }
@@ -963,6 +976,7 @@ header .reservations_btn {
 
 footer {
     width: 120rem;
+    margin: 0 auto;
     height: 41.938rem;
     background: var(--233000, #233000);
 }

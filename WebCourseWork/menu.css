@@ -9,10 +9,17 @@
         margin: 0;
     }
 
+    body{
+        overflow-x: hidden;
+    }
+
     .header_and_heroSection{
         width: 120rem;
+        margin: 0 auto;
         height: 67.5rem;
         background-image: url(../assets/menu_background.png);
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     /* Header */
@@ -20,6 +27,7 @@
     header {
         height: 13rem;
         width: 120rem;
+        margin: 0 auto;
         display: flex;
     }
 
@@ -135,6 +143,7 @@
 
     .hero_section{
         width: 120rem;
+        margin: 0 auto;
         height: 54.5rem;
     }
 
@@ -170,7 +179,6 @@
 
     .menu{
         height: 371.125rem;
-        width: 120rem;
     }
 
     /* Menu Starters */
@@ -181,6 +189,7 @@
         background-position: 98.7% 0%;
         background-repeat: no-repeat;
         background-size: 27%;
+        margin: 0 auto;
     }
 
     .starters_text{
@@ -276,6 +285,7 @@
     .mains_section{
         width: 120rem;
         height: 100.438rem;
+        margin: 0 auto;
     }
 
     .mains_text{
@@ -332,6 +342,7 @@
 
     .pastries_and_drinks_section{
         width: 120rem;
+        margin: 0 auto;
         height: 107.125rem;
         background-image: url("../assets/Avocado.png");
         background-position: 54% 4.8%;
@@ -392,6 +403,7 @@
     .reservation_section {
         display: flex;
         width: 120rem;
+        margin: 0 auto;
         height: 69.563rem;
         flex-direction: column;
         align-items: center;
@@ -509,10 +521,11 @@
 
     footer {
         width: 120rem;
+        margin: 0 auto;
         height: 41.938rem;
         background: var(--233000, #233000);
     }
-
+    
     footer .footer_container {
         height: 16.3rem;
         display: flex;
@@ -521,7 +534,7 @@
         width: 103rem;
         margin-left: 8.7rem;
     }
-
+    
     .footer_logo h2 {
         width: 11.75rem;
         color: var(--FFFFFF, #FFF);
@@ -531,11 +544,11 @@
         font-weight: 700;
         line-height: normal;
     }
-
+    
     .footer_content {
         margin-left: 14.85rem;
     }
-
+    
     .footer h5 {
         margin-top: 0.2rem;
         color: var(--FFFFFF, #FFF);
@@ -545,7 +558,7 @@
         font-weight: 700;
         line-height: 3rem;
     }
-
+    
     .footer_content_phone {
         width: 14rem;
         margin-top: 3.438rem;
@@ -557,7 +570,7 @@
         line-height: 1.563rem;
         letter-spacing: 0.023rem;
     }
-
+    
     .footer_content_address {
         width: 13.125rem;
         margin-top: 1.75rem;
@@ -569,20 +582,20 @@
         line-height: 1.563rem;
         letter-spacing: 0.023rem;
     }
-
+    
     .footer_form {
         margin-left: 12.6rem;
         display: grid;
         grid-template-rows: 3.375rem 5.938rem 1.063rem;
         row-gap: 2.188rem;
     }
-
+    
     .footer_form_box {
         display: flex;
         gap: 1.688rem;
         height: 5.625rem;
     }
-
+    
     .footer_form p {
         color: var(--FFFFFF, #FFF);
         font-family: Montserrat;
@@ -593,7 +606,7 @@
         letter-spacing: 0.018rem;
         width: 30rem;
     }
-
+    
     .footer_form_box input {
         display: flex;
         width: 32.5rem;
@@ -608,7 +621,7 @@
         line-height: 140%;
         letter-spacing: 0.03rem;
     }
-
+    
     .footer_form_box input::placeholder {
         color: var(--FFFFFF, #FFF);
         font-family: Montserrat;
@@ -620,7 +633,7 @@
         width: 25rem;
         letter-spacing: 0.03rem;
     }
-
+    
     .footer_form_box input:focus{
         color: var(--FFFFFF, #FFF);
         font-family: Montserrat;
@@ -630,7 +643,7 @@
         line-height: 140%;
         letter-spacing: 0.03rem;
     }
-
+    
     .footer_form_box button {
         padding: 1.25rem 2.875rem;
         margin-top: 0.1rem;
@@ -645,22 +658,22 @@
         font-weight: 700;
         line-height: 3rem;
     }
-
+    
     .footer_line_img{
         padding-top: 7.6rem;
     }
-
+    
     .footer_copyright{
         width: 120rem;
         margin-top: 3.5rem;
     }
-
+    
     .footer_copyright_container{
         display: flex;
         padding-left: 8.625rem;
-
+    
     }
-
+    
     .footer_copyright_container p{
         color: var(--FFFFFF, #FFF);
         font-family: Montserrat;
@@ -670,13 +683,13 @@
         line-height: 140%; 
         letter-spacing: 0.03rem;
     }
-
+    
     .footer_copyright_icons{
         display: flex;
         margin-left: 61.563rem;
         gap: 1.75rem;
     }
-
+    
     .footer_copyright_icons img{
         width: 1.75rem;
         height: 1.75rem;
