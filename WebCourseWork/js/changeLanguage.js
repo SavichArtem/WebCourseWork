@@ -74,7 +74,7 @@ function checkActiveLangButton() {
         default:
             document
                 .querySelector('[data-btn="ru"]')
-                .classList.add("header__btn_active");
+                .classList.add("header_btn_active");
             break;
     }
 }
