@@ -39,7 +39,7 @@
                 <li class="navigation-item navigation-item-blogs"><a href="" data-lang="nav_text3">Blogs</a>
                     <ul class="navigation-blogs">
                         <li><a href="" data-lang="nav_text4">1 Column</a></li>
-                        <li><a href="" data-lang="nav_text5">2 Columns</a></li>
+                        <li><a href="./two_column_blogs.html" data-lang="nav_text5">2 Columns</a></li>
                     </ul>
                 </li>
                 <li class="navigation-item"><a href="./about.html" data-lang="nav_text6">About</a></li>
@@ -91,6 +91,48 @@
           </section>
     </div>
     <main class="menu">
+        <section class="filters_section">
+            <div class="filters_container">
+                <div class="search_filter">
+                    <input type="text" id="searchInput" placeholder="Search..." data-lang="search_placeholder">
+                    <button id="searchButton" data-lang="search_button">Search</button>
+                </div> 
+                <div class="sort_filter">
+                    <select id="sortSelect">
+                        <option value="" data-lang="sort_default">Default sorting</option>
+                        <option value="price_asc" data-lang="sort_price_asc">Price (Low to High)</option>
+                        <option value="price_desc" data-lang="sort_price_desc">Price (High to Low)</option>
+                        <option value="name_asc" data-lang="sort_name_asc">Name (A-Z)</option>
+                        <option value="name_desc" data-lang="sort_name_desc">Name (Z-A)</option>
+                    </select>
+                </div>
+                
+                <div class="category_filter">
+                    <div class="category_buttons">
+                        <button class="category_btn active" data-category="all" data-lang="category_all">All</button>
+                        <button class="category_btn" data-category="starters" data-lang="category_starters">Starters</button>
+                        <button class="category_btn" data-category="mains" data-lang="category_mains">Mains</button>
+                        <button class="category_btn" data-category="pastries" data-lang="category_pastries">Pastries & Drinks</button>
+                    </div>
+                </div>
+                
+                <div class="advanced_filters">
+                    <div class="price_range">
+                        <h3 data-lang="price_range">Price Range</h3>
+                        <div class="range_inputs">
+                            <input type="number" id="minPrice" placeholder="Min" data-lang="min_price">
+                            <span>-</span>
+                            <input type="number" id="maxPrice" placeholder="Max" data-lang="max_price">
+                            <button id="applyPriceRange" data-lang="apply_button">Apply</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="noResultsMessage" class="no_results" style="display: none;" data-lang="no_results">
+                No products found matching your criteria.
+            </div>
+        </section>
         <section class="starters_section">
             <div class="starters_text">
                 <h2 data-lang="starters_text1">Starters</h2>
@@ -263,6 +305,7 @@
       </article>
     </footer>
     <script src="./js/changeLanguage.js" type="module"></script>
+    <script src="./js/menu/menu.js" type="module"></script>
     <script src="./js/preloader.js"></script>
     <script src="./js/navigation.js"></script>
 </body>

@@ -60,7 +60,7 @@ export const menuPageText = {
         en: "Delicious Deep Sea Snow White Cod Fillet",
     },
     "mains_text5": {
-        ru: "Стейк с розмарино- вым маслом",
+        ru: "Стейк с розмарино&shyвым маслом",
         en: "Steak With Rosemary Butter",
     },
     "mains_text6": {
@@ -192,5 +192,68 @@ export const menuPageText = {
         ru: "Связь",
         en: "Contact",
     },
-    
+    "search_placeholder": {
+        ru: "Поиск...",
+        en: "Search...",
+    },
+    "search_button": {
+        ru: "Найти",
+        en: "Search",
+    },
+    "sort_default": {
+        ru: "По умолчанию",
+        en: "Default sorting"
+    },
+    "sort_price_asc": {
+        ru: "Цена (по возр.)",
+        en: "Price (Low to High)",
+    },
+    "sort_price_desc": {
+        ru: "Цена (по убыв.)",
+        en: "Price (High to Low)",
+    },
+    "sort_name_asc": {
+        ru: "Название (А-Я)",
+        en: "Name (A-Z)",
+    },
+    "sort_name_desc": {
+        ru: "Название (Я-А)",
+        en: "Name (Z-A)",
+    },
+    "category_all": {
+        ru: "Всё",
+        en: "All",
+    },
+    "category_starters": {
+        ru: "Закуски",
+        en: "Starters"
+    },
+    "category_mains": {
+        ru: "Основа",
+        en: "Mains",
+    },
+    "category_pastries": {
+        ru: "Выпечка и напитки",
+        en: "Pastries & Drinks",
+    },
+    "price_range": {
+        ru: "Диапозон цен",
+        en: "Price Range",
+    },
+    "min_price": {
+        ru: "Мин.",
+        en: "Min",
+    },
+    "max_price": {
+        ru: "Макс.",
+        en: "Max",
+    },
+    "apply_button": {
+        ru: "Применить",
+        en: "Apply",
+    },
+    "no_results": {
+        ru: "Товары не найдены",
+        en: "No products found matching your criteria.",
+    },
 }
