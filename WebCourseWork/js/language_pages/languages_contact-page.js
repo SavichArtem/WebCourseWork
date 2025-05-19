@@ -128,5 +128,57 @@ export const contactPageText = {
         ru: "Связь",
         en: "Contact",
     },
+        "cart_title": {
+        ru: 'Ваша корзина',
+        en: 'Your Cart',
+    },
+    "cart_total": {
+        ru: 'Итого:',
+        en: 'Total:',
+    },
+    "cart_checkout": {
+        ru: 'Оформить заказ',
+        en: 'Checkout',
+    },
+    "cart_empty": {
+        ru: 'Ваша корзина пуста',
+        en: 'Your cart is empty',
+    },
+        "starters_text3": {
+        ru: "Жареная бамия и помидоры",
+        en: "Grilled Okra and Tomatoes",
+    },
+    "starters_text5": {
+        ru: "Салат из огурцов",
+        en: "Cucumber Salad",
+    },
+        "starters_text7": {
+        ru: "Блины с базиликом",
+        en: "Basil Pancakes",
+    },
+        "mains_text3": {
+        ru: "Филе глубоководной белоснежной трески",
+        en: "Deep Sea Snow White Cod Fillet",
+    },
+    "mains_text5": {
+        ru: "Стейк с розмарино&shyвым маслом",
+        en: "Steak With Rosemary Butter",
+    },
+    "mains_text7": {
+        ru: "Стейки с жареным кимчи",
+        en: "Steaks with Grilled Kimchi",
+    },
+    "pastries_text3": {
+        ru: "Сочетание вин",
+        en: "Wine Pairing",
+    },
+    "pastries_text5": {
+        ru: "Чистая пара вин",
+        en: "Natural Wine Pairing",
+    },
+    "pastries_text7": {
+        ru: "Виски Flyer",
+        en: "Whisky Flyer",
+    },
     
 }

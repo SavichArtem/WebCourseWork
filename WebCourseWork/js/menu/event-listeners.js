@@ -8,10 +8,12 @@ export function setupEventListeners(filters, refreshCallback) {
     const applyPriceRange = document.getElementById('applyPriceRange');
     
     /* Поиск */
-    searchButton.addEventListener('click', () => {
-        filters.searchQuery = searchInput.value.trim();
-        refreshCallback();
-    });
+    searchButton.addEventListener('click', (e) => {
+  e.preventDefault();
+  e.stopImmediatePropagation();
+  filters.searchQuery = searchInput.value.trim();
+  refreshCallback();
+});
     
     searchInput.addEventListener('keypress', (e) => {
         if (e.key === 'Enter') {
@@ -42,4 +44,9 @@ export function setupEventListeners(filters, refreshCallback) {
         filters.maxPrice = maxPriceInput.value ? parseFloat(maxPriceInput.value) : null;
         refreshCallback();
     });
+
+    document.querySelectorAll('form').forEach(form => {
+  form.addEventListener('submit', e => e.preventDefault());
+});
+    
 }

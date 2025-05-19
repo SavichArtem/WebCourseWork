@@ -1,4 +1,5 @@
 import { filterItems, sortItems, groupItemsByCategory } from './filters.js';
+import { showCartModal, updateCartModal } from '../cart/cart-modal.js';
 
 export async function loadMenuItems(filters) {
     try {
@@ -32,11 +33,10 @@ export async function loadMenuItems(filters) {
     }
 }
 
-function renderItems(items, containerSelector) {
+function renderItems(items, containerSelector, cart) {
     const container = document.querySelector(containerSelector);
     container.innerHTML = '';
     
-    // Получаем текущий язык и тексты
     const currentLang = window.getCurrentLang?.() || 'en';
     const currentText = window.getCurrentText?.() || {};
     
@@ -44,17 +44,36 @@ function renderItems(items, containerSelector) {
         const itemElement = document.createElement('div');
         itemElement.className = 'menu_item';
         
-        // Используем переводы, если они есть, иначе оставляем оригинальный текст
         const name = currentText[item.nameKey]?.[currentLang] || item.name;
         const description = currentText[item.descriptionKey]?.[currentLang] || item.description;
         
         itemElement.innerHTML = `
-            <img src="./assets/basket.png" alt="basket" class="product_basket">
+            <button type="button" class="product_basket-btn">
+                <img src="./assets/basket.png" alt="basket" class="product_basket">
+            </button>
             <h4><span>$</span>${item.price}</h4>
             <img src="./assets/MenuPage_line.png" alt="MenuLine" class="menu_line"/>
             <h2 data-lang="${item.nameKey}">${name}</h2>
             <p data-lang="${item.descriptionKey}">${description}</p>
         `;
+        
+        const basketBtn = itemElement.querySelector('.product_basket-btn');
+basketBtn.addEventListener('click', async (e) => {
+  e.preventDefault();
+  e.stopImmediatePropagation();
+  
+  try {
+    await cart.addItem(item);
+    updateCartModal(cart);
+    
+    const basketBtn = document.querySelector('.header-basket-btn');
+    const totalItems = cart.getItems().reduce((sum, item) => sum + item.quantity, 0);
+    basketBtn.dataset.count = totalItems;
+  } catch (error) {
+    console.error('Error adding item:', error);
+  }
+});
+        
         container.appendChild(itemElement);
     });
 }
@@ -68,7 +87,7 @@ function adjustSectionHeight(section, itemsCount) {
     section.style.height = `${neededHeight}rem`;
 }
 
-export async function displayMenuItems(filters) {
+export async function displayMenuItems(filters, cart) {
     const menuItems = await loadMenuItems(filters);
     let filteredItems = filterItems(menuItems, filters);
     filteredItems = sortItems(filteredItems, filters.sort);
@@ -80,21 +99,21 @@ export async function displayMenuItems(filters) {
     const pastriesSection = document.querySelector('.pastries_and_drinks_section');
     const noResultsMessage = document.getElementById('noResultsMessage');
     
-    document.querySelectorAll('.menu_content-body, .menu_content-body-inverted, .menu_content-body-pastries').forEach(container => {  /* Очистка существующих карточек */
+    document.querySelectorAll('.menu_content-body, .menu_content-body-inverted, .menu_content-body-pastries').forEach(container => {
         container.innerHTML = '';
     });
     
-    startersSection.style.display = 'none'; /* Полностью скрываем все секции сначала */
+    startersSection.style.display = 'none';
     mainsSection.style.display = 'none';
     pastriesSection.style.display = 'none';
     noResultsMessage.style.display = 'none';
     
-    if (filteredItems.length === 0) {  /* Проверка есть ли товары вообще */
+    if (filteredItems.length === 0) {
         noResultsMessage.style.display = 'block';
         return;
     }
 
-    const categories = { /* Отображение каждой категории */
+    const categories = {
         starters: {
             section: startersSection,
             container: '.menu_content-body',
@@ -112,10 +131,10 @@ export async function displayMenuItems(filters) {
         }
     };
 
-    Object.entries(categories).forEach(([category, data]) => { /* Отображение только тех секций, у которых есть товары */
+    Object.entries(categories).forEach(([category, data]) => {
         if (data.items.length > 0 && (filters.category === 'all' || filters.category === category)) {
             data.section.style.display = 'block';
-            renderItems(data.items, data.container);
+            renderItems(data.items, data.container, cart);
             adjustSectionHeight(data.section, data.items.length);
         }
     });

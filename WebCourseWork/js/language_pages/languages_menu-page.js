@@ -256,4 +256,20 @@ export const menuPageText = {
         ru: "Товары не найдены",
         en: "No products found matching your criteria.",
     },
+    "cart_title": {
+        ru: 'Ваша корзина',
+        en: 'Your Cart',
+    },
+    "cart_total": {
+        ru: 'Итого:',
+        en: 'Total:',
+    },
+    "cart_checkout": {
+        ru: 'Оформить заказ',
+        en: 'Checkout',
+    },
+    "cart_empty": {
+        ru: 'Ваша корзина пуста',
+        en: 'Your cart is empty',
+    },
 }
