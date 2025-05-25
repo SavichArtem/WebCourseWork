@@ -2,7 +2,11 @@ import { Cart } from './cart.js';
 import { setupCartModal, showCartModal } from './cart-modal.js';
 
 export async function initCart() {
-    const userId = localStorage.getItem('userId') || 'guest';
+    // Получаем ID пользователя из localStorage
+    const userId = localStorage.getItem('currentUser') 
+        ? JSON.parse(localStorage.getItem('currentUser')).id 
+        : localStorage.getItem('guestId') || 'guest';
+    
     const cart = new Cart(userId);
     
     try {

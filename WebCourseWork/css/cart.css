@@ -1,4 +1,5 @@
 .cart-modal {
+    font-family: Rufina;
     display: none;
     position: fixed;
     z-index: 1000;

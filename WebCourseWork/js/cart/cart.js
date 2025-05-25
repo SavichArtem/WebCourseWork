@@ -2,6 +2,10 @@ export class Cart {
   constructor(userId = 'guest') {
     this.userId = userId;
     this.items = [];
+    if (userId === 'guest') {
+      this.userId = `guest_${Math.random().toString(36).substr(2, 9)}`;
+      localStorage.setItem('guestId', this.userId);
+    }
   }
 
   async init() {
