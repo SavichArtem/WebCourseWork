@@ -95,3 +95,11 @@ body.night-theme .moon{
 body.night-theme .sun{
     opacity: 1;
 }
+
+body.night-theme .filters_section{
+    background-color: #191919;
+}
+
+body.night-theme .no_results{
+    color: white;
+}

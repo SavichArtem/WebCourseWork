@@ -256,6 +256,10 @@
     }
 
     .sort_filter select {
+        appearance: none;
+        background-image: url("../../assets/Icon_angle-down.png");
+        background-position: right 2.5rem center;
+        background-repeat: no-repeat;
         padding: 1rem;
         border: 1px solid #ddd;
         border-radius: 0.5rem;
