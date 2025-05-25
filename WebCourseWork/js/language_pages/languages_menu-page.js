@@ -1,4 +1,8 @@
 export const menuPageText = {
+    "menu_page_title": {
+        ru: "Меню",
+        en: "Menu",
+    },
     "header_text": {
         ru: "Забронировать",
         en: "Reservation",

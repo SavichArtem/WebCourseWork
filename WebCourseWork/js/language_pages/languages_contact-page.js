@@ -1,4 +1,8 @@
 export const contactPageText = {
+    "contact_title": {
+        ru: "Контакты",
+        en: "Contact",
+    },
     "header_text": {
         ru: "Забронировать",
         en: "Reservation",

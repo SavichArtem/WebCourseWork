@@ -1,4 +1,8 @@
 export const aboutPageText = {
+    "about_title": {
+        ru: "О нас",
+        en: "About",
+    },
     "header_text": {
         ru: "Забронировать",
         en: "Reservation",
