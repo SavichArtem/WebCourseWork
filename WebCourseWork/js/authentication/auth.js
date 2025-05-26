@@ -1,4 +1,4 @@
-import { validateEmail } from "./validation.js";
+import { validateEmail } from "../authentication/validation.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   const loginForm = document.getElementById("loginForm");

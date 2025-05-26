@@ -134,3 +134,90 @@ export function validateConfirmPassword(password, confirmPassword) {
   if (password !== confirmPassword) return "validation_passwords_match";
   return "";
 }
+
+export function validateProduct(product) {
+    const errors = {};
+    
+    if (!product.name || product.name.trim() === '') {
+        errors.name = 'validation_required';
+    } else if (product.name.length < 3) {
+        errors.name = 'validation_name_min_length';
+    } else if (product.name.length > 100) {
+        errors.name = 'validation_name_max_length';
+    }
+    
+    if (!product.nameKey || product.nameKey.trim() === '') {
+        errors.nameKey = 'validation_required';
+    } else if (!/^(starters|mains|pastries)_text\d+$/.test(product.nameKey)) {
+        errors.nameKey = 'validation_name_key_format';
+    }
+    
+    if (!product.description || product.description.trim() === '') {
+        errors.description = 'validation_required';
+    } else if (product.description.length < 10) {
+        errors.description = 'validation_description_min_length';
+    } else if (product.description.length > 500) {
+        errors.description = 'validation_description_max_length';
+    }
+    
+    if (!product.descriptionKey || product.descriptionKey.trim() === '') {
+        errors.descriptionKey = 'validation_required';
+    } else if (!/^(starters|mains|pastries)_text\d+$/.test(product.descriptionKey)) {
+        errors.descriptionKey = 'validation_description_key_format';
+    }
+    
+    if (!product.price || product.price.toString().trim() === '') {
+        errors.price = 'validation_required';
+    } else if (isNaN(product.price)) {
+        errors.price = 'validation_price_numeric';
+    } else if (parseFloat(product.price) <= 0) {
+        errors.price = 'validation_price_min';
+    } else if (parseFloat(product.price) > 1000) {
+        errors.price = 'validation_price_max';
+    }
+    
+    if (!product.image || product.image.trim() === '') {
+        errors.image = 'validation_required';
+    } else if (!/\.(jpg|jpeg|png|gif|svg)$/i.test(product.image)) {
+        errors.image = 'validation_image_format';
+    }
+    
+    return errors;
+}
+
+export function setFieldValidationState(fieldId, isValid, errorKey) {
+    const errorElement = document.getElementById(`${fieldId}Error`);
+    const inputElement = document.getElementById(fieldId);
+    
+    if (!errorElement || !inputElement) return;
+    
+    inputElement.classList.toggle('invalid', !isValid);
+    inputElement.classList.toggle('valid', isValid);
+    
+    if (errorKey) {
+        errorElement.textContent = getTranslation(errorKey);
+    } else {
+        errorElement.textContent = '';
+    }
+}
+
+function getTranslation(key) {
+    const defaultTranslations = {
+        'validation_required': 'This field is required',
+        'validation_name_min_length': 'Name must be at least 3 characters',
+        'validation_name_max_length': 'Name must be less than 100 characters',
+        'validation_name_key_format': 'Must be starters_text#, mains_text# or pastries_text#',
+        'validation_description_min_length': 'Description must be at least 10 characters',
+        'validation_description_max_length': 'Description must be less than 500 characters',
+        'validation_description_key_format': 'Must be starters_text#, mains_text# or pastries_text#',
+        'validation_price_numeric': 'Price must be a number',
+        'validation_price_min': 'Price must be greater than 0',
+        'validation_price_max': 'Price must be less than $1000',
+        'validation_image_format': 'Image URL must end with .jpg, .jpeg, .png, .gif or .svg'
+    };
+    
+    const currentText = window.getCurrentText?.() || {};
+    const currentLang = window.getCurrentLang?.() || 'en';
+    
+    return currentText[key]?.[currentLang] || defaultTranslations[key] || key;
+}

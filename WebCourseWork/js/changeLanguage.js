@@ -14,6 +14,7 @@ import { contactPageText } from "./language_pages/languages_contact-page.js";
 import { aboutPageText } from "./language_pages/languages_about-page.js";
 import { loginPageText } from "./language_pages/languages_login-page.js";
 import { registrationPageText } from "./language_pages/languages_registration-page.js";
+import { adminPageText } from "./language_pages/languages_admin-page.js";
 
 function checkPagePathName() {
   switch (currentPathName) {
@@ -35,6 +36,9 @@ function checkPagePathName() {
     case "/registration.html":
       currentText = registrationPageText;
       break;
+    case "/admin.html":
+      currentText = adminPageText;
+      break;
     default:
       currentText = homePageText;
       break;
@@ -49,6 +53,11 @@ function changeLang() {
     if (elem) {
       elem.textContent = currentText[key][currentLang];
     }
+  }
+
+  if (window.adminPanel) {
+    window.adminPanel.updateTranslations();
+    window.adminPanel.validation.updateSaveButtonState();
   }
 
   updateErrorMessages();

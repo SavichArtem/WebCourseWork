@@ -22,3 +22,34 @@ export async function checkEmailExists(email) {
 export async function checkPhoneExists(phone) {
   return checkFieldExists("phone", phone);
 }
+
+
+export async function fetchWithAuth(url, options = {}) {
+    try {
+        const currentUser = JSON.parse(localStorage.getItem('currentUser'));
+        
+        const headers = {
+            'Content-Type': 'application/json',
+            ...options.headers
+        };
+        
+        if (currentUser) {
+            headers['Authorization'] = `Bearer ${currentUser.id}`;
+        }
+        
+        const response = await fetch(url, {
+            ...options,
+            headers
+        });
+        
+        if (!response.ok) {
+            const errorData = await response.json().catch(() => ({}));
+            throw new Error(errorData.message || 'Network error');
+        }
+        
+        return await response.json();
+    } catch (error) {
+        console.error('API Error:', error);
+        throw error;
+    }
+}
