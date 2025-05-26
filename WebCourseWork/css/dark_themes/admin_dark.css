@@ -95,3 +95,8 @@ body.night-theme .moon{
 body.night-theme .sun{
     opacity: 1;
 }
+
+body.night-theme #currentPage,
+body.night-theme .pagination-btn{
+    color: white;
+}

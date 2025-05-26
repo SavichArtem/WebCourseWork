@@ -422,4 +422,28 @@ export const adminPageText = {
     en: "Domain must contain a dot",
     ru: "Домен должен содержать точку",
   },
+  'previous': {
+    'en': 'Previous',
+    'ru': 'Назад'
+  },
+  'next': {
+    'en': 'Next',
+    'ru': 'Вперед'
+  },
+  'page': {
+    'en': 'Page',
+    'ru': 'Страница'
+  },
+      'previous': {
+        'en': 'Previous',
+        'ru': 'Назад'
+    },
+    'next': {
+        'en': 'Next',
+        'ru': 'Вперед'
+    },
+    'page_info': {
+        'en': 'Page {current} of {total}',
+        'ru': 'Страница {current} из {total}'
+    }
 };

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,6 +22,7 @@
     <meta name="apple-mobile-web-app-title" content="FoodZero" />
     <link rel="manifest" href="./favicons/site.webmanifest" />
 </head>
+
 <body>
     <script>
         const theme = localStorage.getItem("theme")
@@ -98,8 +100,11 @@
                     <h2 data-lang="products_management">Products Management</h2>
                     <button id="addProductBtn" class="btn-primary" data-lang="add_product">Add Product</button>
                 </div>
-
-                <div class="products-list" id="productsList">
+                <div class="products-list" id="productsList"></div>
+                <div class="pagination-controls">
+                    <button id="prevPage" class="pagination-btn" data-lang="previous">Previous</button>
+                    <span id="currentPage"></span>
+                    <button id="nextPage" class="pagination-btn" data-lang="next">Next</button>
                 </div>
             </section>
         </main>
@@ -109,37 +114,38 @@
                 <h2 id="modalTitle" data-lang="add_product">Add New Product</h2>
                 <form id="productForm">
                     <input type="hidden" id="productId">
-                    
+
                     <div class="form-group">
                         <label for="productName" data-lang="product_name">Name</label>
                         <input type="text" id="productName" required>
                         <div id="productNameError" class="error-message"></div>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="productNameKey" data-lang="name_translation_key">Name Translation Key</label>
                         <input type="text" id="productNameKey" required>
                         <div id="productNameKeyError" class="error-message"></div>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="productDescription" data-lang="description">Description</label>
                         <textarea id="productDescription" required></textarea>
                         <div id="productDescriptionError" class="error-message"></div>
                     </div>
-                    
+
                     <div class="form-group">
-                        <label for="productDescriptionKey" data-lang="description_translation_key">Description Translation Key</label>
+                        <label for="productDescriptionKey" data-lang="description_translation_key">Description
+                            Translation Key</label>
                         <input type="text" id="productDescriptionKey" required>
                         <div id="productDescriptionKeyError" class="error-message"></div>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="productPrice" data-lang="price">Price ($)</label>
                         <input type="number" id="productPrice" min="0" step="0.01" required>
                         <div id="productPriceError" class="error-message"></div>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="productCategory" data-lang="category">Category</label>
                         <select id="productCategory" required>
@@ -148,16 +154,17 @@
                             <option value="pastries" data-lang="category_pastries">Pastries</option>
                         </select>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="productImage">Image URL</label>
                         <input type="text" id="productImage" required>
                         <div id="productImageError" class="error-message"></div>
                     </div>
-                    
+
                     <div class="form-actions">
                         <button type="submit" id="saveProductBtn" class="btn-save" data-lang="save">Save</button>
-                        <button type="button" id="cancelProductBtn" class="btn-cancel" data-lang="cancel">Cancel</button>
+                        <button type="button" id="cancelProductBtn" class="btn-cancel"
+                            data-lang="cancel">Cancel</button>
                     </div>
                 </form>
             </div>
@@ -214,47 +221,47 @@
             </article>
         </article>
     </footer>
-        <div class="modal" id="profileModal" style="display: none;">
-    <div class="modal-content">
-        <span class="closeBtn">&times;</span>
-        <h2 data-lang="profile_text1">Your Profile</h2>
-        <form id="profileForm">
-            <div class="form-group">
-                <h3 data-lang="profile_text2">First Name</h3>
-                <input type="text" id="profileFirstName" required>
-            </div>
-            <div class="form-group">
-                <h3 data-lang="profile_text3">Last Name</h3>
-                <input type="text" id="profileLastName" required>
-            </div>
-            <div class="form-group">
-                <h3 data-lang="profile_text9">Username</h3>
-                <input type="text" id="profileUsername" required>
-                <div id="profileUsernameError" class="error-message"></div>
-            </div>
-            <div class="form-group">
-                <h3 data-lang="profile_text10">Password</h3>
-                <input type="text" id="profilePassword" readonly>
-            </div>
-            <div class="form-group">
-                <h3 data-lang="profile_text4">Email</h3>
-                <input type="email" id="profileEmail" required>
-                <div id="profileEmailError" class="error-message"></div>
-            </div>
-            <div class="form-group">
-                <h3 data-lang="profile_text5">Phone</h3>
-                <input type="tel" id="profilePhone" required>
-                <div id="profilePhoneError" class="error-message"></div>
-            </div>
-            <div class="form-actions">
-                <button type="submit" class="btn-save" data-lang="profile_text6">Save</button>
-                <button type="button" id="resetProfile" class="btn-reset" data-lang="profile_text7">Reset</button>
-            </div>
-            <div class="profile-divider"></div>
-            <button type="button" id="logoutBtn" class="btn-logout" data-lang="profile_text8">Logout</button>
-        </form>
+    <div class="modal" id="profileModal" style="display: none;">
+        <div class="modal-content">
+            <span class="closeBtn">&times;</span>
+            <h2 data-lang="profile_text1">Your Profile</h2>
+            <form id="profileForm">
+                <div class="form-group">
+                    <h3 data-lang="profile_text2">First Name</h3>
+                    <input type="text" id="profileFirstName" required>
+                </div>
+                <div class="form-group">
+                    <h3 data-lang="profile_text3">Last Name</h3>
+                    <input type="text" id="profileLastName" required>
+                </div>
+                <div class="form-group">
+                    <h3 data-lang="profile_text9">Username</h3>
+                    <input type="text" id="profileUsername" required>
+                    <div id="profileUsernameError" class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <h3 data-lang="profile_text10">Password</h3>
+                    <input type="text" id="profilePassword" readonly>
+                </div>
+                <div class="form-group">
+                    <h3 data-lang="profile_text4">Email</h3>
+                    <input type="email" id="profileEmail" required>
+                    <div id="profileEmailError" class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <h3 data-lang="profile_text5">Phone</h3>
+                    <input type="tel" id="profilePhone" required>
+                    <div id="profilePhoneError" class="error-message"></div>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn-save" data-lang="profile_text6">Save</button>
+                    <button type="button" id="resetProfile" class="btn-reset" data-lang="profile_text7">Reset</button>
+                </div>
+                <div class="profile-divider"></div>
+                <button type="button" id="logoutBtn" class="btn-logout" data-lang="profile_text8">Logout</button>
+            </form>
+        </div>
     </div>
-</div>
     <script src="./js/changeLanguage.js" type="module"></script>
     <script src="./js/authentication/profileModal.js" type="module"></script>
     <script src="./js/authentication/userManager.js" type="module"></script>

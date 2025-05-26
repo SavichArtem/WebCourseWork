@@ -617,3 +617,45 @@ footer .footer_container {
     width: 1.75rem;
     height: 1.75rem;
 }
+
+.pagination-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 1.25rem 0;
+    padding: 0.625rem;
+    border-radius: 0.5rem;
+}
+
+.pagination-btn {
+    padding: 0.5rem 1rem;
+    border: 0.063rem solid black;
+    border-radius: 4px;
+    background-color: rgb(95, 241, 120);
+    font-family: Montserrat;
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pagination-btn:hover:not(:disabled) {
+    background-color: rgb(0, 255, 0);
+    color: white;
+}
+
+.pagination-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#currentPage {
+    font-weight: 500;
+    color: black;
+    min-width: 7.5rem;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 1.125rem;
+}
+
