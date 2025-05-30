@@ -492,5 +492,57 @@ export const homePageText = {
     "validation_email_missing_dot": {
         en: "Domain must contain a dot",
         ru: "Домен должен содержать точку"
+    },
+    "accessibility_font_size": {
+        en: "Font size",
+        ru: "Размер шрифта"
+    },
+    "accessibility_small": {
+        en: "Small",
+        ru: "Малый"
+    },
+    "accessibility_medium": {
+        en: "Medium",
+        ru: "Средний"
+    },
+    "accessibility_large": {
+        en: "Large",
+        ru: "Большой"
+    },
+    "accessibility_color_scheme": {
+        en: "Color scheme",
+        ru: "Цветовая схема"
+    },
+    "accessibility_black_white": {
+        en: "Black/White",
+        ru: "Чёрный/Белый"
+    },
+    "accessibility_black_green": {
+        en: "Black/Green",
+        ru: "Чёрный/Зелёный"
+    },
+    "accessibility_white_black": {
+        en: "White/Black",
+        ru: "Белый/Чёрный"
+    },
+    "accessibility_images": {
+        en: "Images",
+        ru: "Изображения"
+    },
+    "accessibility_images_on": {
+        en: "On",
+        ru: "Вкл"
+    },
+    "accessibility_images_off": {
+        en: "Off",
+        ru: "Выкл"
+    },
+    "accessibility_enable":{
+        en: "Enable Accessibility Version",
+        ru: "Включить версию для слабовидящих"
+    },
+    "accessibility_disable":{
+        en: "Disable Accessibility Version",
+        ru: "Выключить версию для слабовидящих"
     }
 }

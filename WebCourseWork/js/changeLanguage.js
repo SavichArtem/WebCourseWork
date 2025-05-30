@@ -60,6 +60,10 @@ function changeLang() {
     window.adminPanel.validation.updateSaveButtonState();
   }
 
+  if (typeof window.updateAccessibilityButtonText === 'function') {
+    window.updateAccessibilityButtonText();
+  }
+
   updateErrorMessages();
 }
 
