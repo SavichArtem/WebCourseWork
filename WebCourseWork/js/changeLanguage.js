@@ -15,6 +15,7 @@ import { aboutPageText } from "./language_pages/languages_about-page.js";
 import { loginPageText } from "./language_pages/languages_login-page.js";
 import { registrationPageText } from "./language_pages/languages_registration-page.js";
 import { adminPageText } from "./language_pages/languages_admin-page.js";
+import { blogsPageText } from "./language_pages/languages_blogs-page.js";
 
 function checkPagePathName() {
   switch (currentPathName) {
@@ -38,6 +39,9 @@ function checkPagePathName() {
       break;
     case "/admin.html":
       currentText = adminPageText;
+      break;
+    case "/blogs.html":
+      currentText = blogsPageText;
       break;
     default:
       currentText = homePageText;
