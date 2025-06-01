@@ -48,3 +48,7 @@ body.night-theme .sun{
 body.night-theme .modal-content{
         background: #1e2430;
 }
+
+body.night-theme footer button{
+    background-color: #191919 !important;
+}

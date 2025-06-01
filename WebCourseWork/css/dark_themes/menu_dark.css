@@ -103,3 +103,7 @@ body.night-theme .filters_section{
 body.night-theme .no_results{
     color: white;
 }
+
+body.night-theme footer button{
+    background-color: black !important;
+}

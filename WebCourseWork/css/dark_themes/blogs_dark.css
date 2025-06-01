@@ -64,3 +64,11 @@ body.night-theme .post_card_comment img{
 body.night-theme .post_card_readMore img{
     filter: brightness(0) invert(1);
 }
+
+body.night-theme footer button{
+    background-color: #191919 !important;
+}
+
+body.night-theme .imgPost button{
+    background-color: black;
+}
