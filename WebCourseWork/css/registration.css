@@ -156,7 +156,7 @@ label {
     font-weight: bold;
 }
 
-input,
+.container input,
 select {
     font-family: Montserrat;
     width: 100%;
@@ -233,9 +233,8 @@ select:invalid {
 }
 
 /* Подсветка при фокусе */
-input:focus:invalid,
+.container input:focus:invalid,
 select:focus:invalid {
-    box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.2);
     outline: none;
 }
 
@@ -246,9 +245,9 @@ select:focus:invalid {
     height: 1.125rem;
 }
 
-input:invalid,
+.container input:invalid,
 select:invalid {
-    border-color: red;
+    border-color: rgb(0, 0, 0);
 }
 
 /* Соглашение */

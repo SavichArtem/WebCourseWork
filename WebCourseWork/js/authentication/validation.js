@@ -115,24 +115,28 @@ export function validateBirthdate(birthdate) {
   if (age < 16) {
     return "validation_age";
   }
-  return "";
+  return null;
 }
 
 export function validatePassword(password) {
   if (!password) return "validation_required";
   if (password.length < 8 || password.length > 20)
     return "validation_password_length";
-  if (!/[A-Z]/.test(password)) return "validation_password_uppercase";
-  if (!/[a-z]/.test(password)) return "validation_password_lowercase";
+  
+  if (!/[A-ZА-ЯЁ]/.test(password)) return "validation_password_uppercase";
+  if (!/[a-zа-яё]/.test(password)) return "validation_password_lowercase";
   if (!/\d/.test(password)) return "validation_password_digit";
-  if (!/[^A-Za-z0-9]/.test(password)) return "validation_password_special";
-  return "";
+  
+  if (!/[^A-Za-z0-9А-Яа-яЁё]/.test(password)) 
+    return "validation_password_special";
+  
+  return null;
 }
 
 export function validateConfirmPassword(password, confirmPassword) {
   if (!confirmPassword) return "validation_required";
   if (password !== confirmPassword) return "validation_passwords_match";
-  return "";
+  return null;
 }
 
 export function validateProduct(product) {

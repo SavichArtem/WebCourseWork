@@ -1,7 +1,16 @@
-import {validatePhone, validateEmail, validateBirthdate, validatePassword, validateConfirmPassword} from "./validation.js";
+import {
+  validatePhone,
+  validateEmail,
+  validateBirthdate,
+  validatePassword,
+  validateConfirmPassword,
+  validateUsername,
+  initValidation,
+  markAsTouched,
+  shouldValidate
+} from "./validation.js";
 import { generateUsername } from "./usernameGenerator.js";
 import { checkFieldExists, checkUsernameExists } from "./api.js";
-import { validateUsername } from "./validation.js";
 import { generateAutoPassword } from "./passwordGenerator.js";
 import { showNotification } from "../notifications.js";
 
@@ -78,6 +87,80 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
+  [
+    phoneInput, emailInput, birthdateInput, 
+    firstNameInput, lastNameInput, usernameInput
+  ].forEach(initValidation);
+  
+  if (passwordInput) initValidation(passwordInput);
+  if (confirmPasswordInput) initValidation(confirmPasswordInput);
+
+  const addFieldValidation = (input, validator) => {
+    input.addEventListener("blur", () => {
+      markAsTouched(input);
+      validateField(input, validator);
+      validateForm();
+    });
+
+    input.addEventListener("input", () => {
+      validateField(input, validator);
+      validateForm();
+    });
+  };
+
+  addFieldValidation(phoneInput, validatePhone);
+  addFieldValidation(emailInput, validateEmail);
+  addFieldValidation(birthdateInput, validateBirthdate);
+  addFieldValidation(firstNameInput, value => value.trim() ? null : "validation_required");
+  addFieldValidation(lastNameInput, value => value.trim() ? null : "validation_required");
+  addFieldValidation(usernameInput, validateUsername);
+  
+  agreementCheckbox.addEventListener("change", () => {
+    validateField(agreementCheckbox, checked => checked ? null : "validation_required");
+    validateForm();
+  });
+
+  if (passwordInput && confirmPasswordInput) {
+    addFieldValidation(passwordInput, validatePassword);
+    
+    confirmPasswordInput.addEventListener("blur", () => {
+      markAsTouched(confirmPasswordInput);
+      validateConfirmPasswordField();
+      validateForm();
+    });
+    
+    confirmPasswordInput.addEventListener("input", () => {
+      validateConfirmPasswordField();
+      validateForm();
+    });
+  }
+
+  function validateField(field, validator) {
+    const value = field.type === "checkbox" ? field.checked : field.value;
+    const errorId = `${field.id}Error`;
+    
+    if (shouldValidate(field)) {
+      const error = validator(value);
+      setError(errorId, error);
+    } else {
+      setError(errorId, "");
+    }
+  }
+
+  function validateConfirmPasswordField() {
+    const errorId = "confirmPasswordError";
+    
+    if (shouldValidate(confirmPasswordInput)) {
+      const error = validateConfirmPassword(
+        passwordInput.value, 
+        confirmPasswordInput.value
+      );
+      setError(errorId, error);
+    } else {
+      setError(errorId, "");
+    }
+  }
+
   generateUsernameBtn.addEventListener("click", async () => {
     const firstName = firstNameInput.value.trim();
     const lastName = lastNameInput.value.trim();
@@ -104,6 +187,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     usernameInput.value = newUsername;
+    markAsTouched(usernameInput);
 
     if (!isUnique) {
       setError("usernameError", getTranslation("username_generation_failed"));
@@ -120,11 +204,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   usernameInput.addEventListener("input", async () => {
     const username = usernameInput.value.trim();
+    markAsTouched(usernameInput);
+    
     if (username.length > 0) {
       const exists = await checkUsernameExists(username);
       setError("usernameError", exists ? getTranslation("username_taken") : "");
     } else {
-      setError("usernameError", "");
+      setError("usernameError", getTranslation("validation_required"));
     }
     validateForm();
   });
@@ -137,10 +223,6 @@ document.addEventListener("DOMContentLoaded", () => {
       setError("passwordError", "");
       setError("confirmPasswordError", "");
     }
-    validateForm();
-  });
-
-  form.addEventListener("input", () => {
     validateForm();
   });
 
@@ -233,59 +315,47 @@ document.addEventListener("DOMContentLoaded", () => {
   function validateForm() {
     let isValid = true;
 
-    const phoneError = validatePhone(phoneInput.value, phoneInput);
-    setError("phoneError", phoneError);
-    if (phoneError) isValid = false;
+    const fields = [
+      {input: phoneInput, validator: validatePhone},
+      {input: emailInput, validator: validateEmail},
+      {input: birthdateInput, validator: validateBirthdate},
+      {input: firstNameInput, validator: value => value.trim() ? null : "validation_required"},
+      {input: lastNameInput, validator: value => value.trim() ? null : "validation_required"},
+      {input: usernameInput, validator: validateUsername},
+      {input: agreementCheckbox, validator: checked => checked ? null : "validation_required"}
+    ];
 
-    const emailError = validateEmail(emailInput.value, emailInput);
-    setError("emailError", emailError);
-    if (emailError) isValid = false;
+    fields.forEach(({input, validator}) => {
+      if (input && shouldValidate(input)) {
+        const value = input.type === "checkbox" ? input.checked : input.value;
+        const error = validator(value);
+        if (error) {
+          setError(`${input.id}Error`, error);
+          isValid = false;
+        } else {
+          setError(`${input.id}Error`, "");
+        }
+      }
+    });
 
-    const birthdateError = validateBirthdate(birthdateInput.value);
-    setError("birthdateError", birthdateError);
-    if (birthdateError) isValid = false;
-
-    if (passwordMethodSelect.value === "manual") {
-      const passwordError = validatePassword(passwordInput.value);
-      setError("passwordError", passwordError);
-      if (passwordError) isValid = false;
-
-      const confirmPasswordError = validateConfirmPassword(
-        passwordInput.value,
-        confirmPasswordInput.value
-      );
-      setError("confirmPasswordError", confirmPasswordError);
-      if (confirmPasswordError) isValid = false;
-    }
-
-    const usernameError = validateUsername(usernameInput.value);
-    setError("usernameError", usernameError);
-    if (usernameError) isValid = false;
-
-    if (!firstNameInput.value.trim()) {
-      setError("firstNameError", getTranslation("validation_required"));
-      isValid = false;
-    } else {
-      setError("firstNameError", "");
-    }
-
-    if (!lastNameInput.value.trim()) {
-      setError("lastNameError", getTranslation("validation_required"));
-      isValid = false;
-    } else {
-      setError("lastNameError", "");
-    }
-
-    if (!usernameInput.value.trim()) {
-      setError("usernameError", getTranslation("username_required"));
-      isValid = false;
-    }
-
-    if (!agreementCheckbox.checked) {
-      setError("agreementError", getTranslation("validation_required"));
-      isValid = false;
-    } else {
-      setError("agreementError", "");
+    if (passwordMethodSelect.value === "manual" && 
+        passwordInput && 
+        confirmPasswordInput) {
+          
+      if (shouldValidate(passwordInput)) {
+        const passwordError = validatePassword(passwordInput.value);
+        setError("passwordError", passwordError);
+        if (passwordError) isValid = false;
+      }
+      
+      if (shouldValidate(confirmPasswordInput)) {
+        const confirmError = validateConfirmPassword(
+          passwordInput.value, 
+          confirmPasswordInput.value
+        );
+        setError("confirmPasswordError", confirmError);
+        if (confirmError) isValid = false;
+      }
     }
 
     submitBtn.disabled = !isValid;

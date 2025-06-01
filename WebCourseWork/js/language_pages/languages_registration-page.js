@@ -61,7 +61,10 @@ export const registrationPageText = {
         en: "Email must contain a dot after @ symbol",
         ru: "Email должен содержать точку после символа @"
     },
-    
+    "validation_username_invalid": {
+        ru: "Логин не должен содержать русских букв",
+        en: "Username shouldn't contain russian letters "
+    },
   "registration_title": {
         ru: "Регистрация",
         en: "Registration"
