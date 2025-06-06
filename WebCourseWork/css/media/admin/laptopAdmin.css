@@ -1,0 +1,224 @@
+@media (max-width: 768px) {
+  /* Header */
+
+header {
+    height: 208px;
+    width: 48rem;
+}
+
+header .Logo {
+    display: none;
+}
+
+header .nav-btn {
+    width: 5.875rem;
+    height: 4.438rem;
+    margin-left: 0;
+    margin-top: 4.25rem;
+}
+
+header .night-theme-btn {
+    width: 3.75rem;
+    height: 3.75rem;
+    margin-left: 72.313rem;
+    margin-top: 4.938rem;
+}
+
+header .moon {
+    left: -46.9rem;
+    top: 0.15rem;
+    width: 47.826px;
+height: 43.478px;
+}
+
+header .sun {
+    left: -46.9rem;
+    top: 0.15rem;
+    width: 47.826px;
+    height: 43.478px;
+}
+
+header .header-reload-btn{
+  display: none;
+}
+
+header .header_btn{
+    width: 53.913px;
+    height: 4rem;
+    font-size: 2.609rem;
+    margin-left: 1.4rem;
+    margin-top: 4.5rem;
+}
+
+header .header-basket-btn{
+    margin-left: 4.8rem;
+    margin-top: 5rem;
+}
+
+.user-icon{
+    margin-left: 5.6rem;
+    margin-top: 0.3rem;
+}
+
+header .header-basket-btn img{
+      width: 3.098rem;
+    height: 2.88rem;
+}
+
+header .poor-vision-version-btn{
+    width: 3.875rem;
+    height: 3.313rem;
+    margin-left: 1rem;
+    margin-top: 4.938rem;
+}
+
+header .poor-vision-version-btn img{
+    height: 30px;
+}
+
+header p {
+    display: none;
+}
+
+header .reservations_btn {
+    width: 17.813rem;
+    height: 5.5rem;
+    margin-left: 5.58rem;
+    margin-top: 3.7rem;
+}
+
+/* HeroSection */
+
+.hero_section {
+    width: 48rem;
+    height: 4020px;
+}
+
+  /* Footer */
+
+footer {
+    width: 48rem;
+    margin: 0 auto;
+    height: 1016px;
+    background: var(--233000, #233000);
+}
+
+footer .footer_container {
+    height: 16.3rem;
+    display: flex;
+    padding-top: 5.8rem;
+    align-items: center;
+    width: 103rem;
+    margin-left: 60px;
+}
+
+.footer_logo h2 {
+    width: 11.75rem;
+    color: var(--FFFFFF, #FFF);
+    font-family: Rufina;
+    font-size: 4.25rem;
+    font-style: normal;
+    margin-top: 0rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.footer_content {
+  margin-top: 3rem;
+    margin-left: 17rem;
+}
+
+.footer_form {
+  margin-top: 37.2rem;
+    margin-left: -38.9rem;
+    display: grid;
+    grid-template-rows: 3.375rem 5.938rem 1.063rem;
+    row-gap: 2.188rem;
+    text-align: center;
+}
+
+.footer_form_box {
+    display: grid;
+    gap: 1.688rem;
+    height: 5.625rem;
+}
+
+.footer_form p {
+    color: var(--FFFFFF, #FFF);
+    font-family: Montserrat;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.018rem;
+    width: 30rem;
+    margin-left: 1.4rem;
+}
+
+.footer_form_box button {
+    padding: 21px 47px;
+    width: 243px;
+    margin-left: 8.8rem;
+    margin-top: 3.6rem;
+    justify-content: center;
+    align-items: center;
+    color: var(--FFFFFF, #FFF);
+    background: var(--5E6600, #5E6600);
+    border: none;
+    font-family: Rufina;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3rem;
+}
+
+.footer_line_img{
+    padding-top: 27.8rem;
+}
+
+.footer_copyright{
+    width: 120rem;
+    margin-top: 2.1rem;
+}
+
+.footer_copyright_container{
+    display: flex;
+    padding-left: 9rem;
+
+}
+
+.footer_copyright_icons{
+    display: flex;
+    margin-top: 5.6rem;
+    margin-left: -19rem;
+    gap: 1.75rem;
+}
+
+.footer_copyright_icons img{
+    width: 1.75rem;
+    height: 1.75rem;
+}
+
+/* Navigation */
+
+.navigation{
+  width: 48rem;
+}
+
+.navigation-content{
+  left: 10%;
+  top: 12.8%;
+}
+
+.navigation-socials{
+  left: 55%;
+  top: 27.5%;
+}
+
+/* modal */
+
+.modal,
+.modalAdmin{
+    width: 100vw;
+}
+}

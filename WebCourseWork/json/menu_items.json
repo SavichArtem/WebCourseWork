@@ -85,12 +85,123 @@
       "nameKey": "pastries_text7",
       "description": "Enjoy a Whisky Flyer",
       "descriptionKey": "pastries_text8",
-      "price": 92,
+      "price": 90,
       "category": "pastries",
       "image": "whisky.jpg",
       "id": "9"
     }
   ],
-  "carts": [],
-  "users": []
+  "carts": [
+    {
+      "userId": "41bd",
+      "items": [
+        {
+          "name": "Steak With Rosemary Butter",
+          "nameKey": "mains_text5",
+          "description": "Enjoy a Steak With Rosemary Butter",
+          "descriptionKey": "mains_text6",
+          "price": 22,
+          "category": "mains",
+          "image": "steak-rosemary.jpg",
+          "id": "5",
+          "quantity": 1
+        }
+      ],
+      "id": "8227"
+    },
+    {
+      "id": "db66",
+      "userId": "guest_xm1o1ee4o",
+      "items": []
+    }
+  ],
+  "orders": [
+    {
+      "id": "6363",
+      "userId": "41bd",
+      "items": [
+        {
+          "name": "Cucumber Salad",
+          "nameKey": "starters_text5",
+          "description": "Try this delicious Cucumber Salad",
+          "descriptionKey": "starters_text6",
+          "price": 18,
+          "category": "starters",
+          "image": "cucumber-salad.jpg",
+          "id": "2",
+          "quantity": 1
+        }
+      ],
+      "total": 18,
+      "date": "2025-06-04T18:31:13.244Z"
+    },
+    {
+      "id": "19c9",
+      "userId": "41bd",
+      "items": [
+        {
+          "name": "Whisky Flyer",
+          "nameKey": "pastries_text7",
+          "description": "Enjoy a Whisky Flyer",
+          "descriptionKey": "pastries_text8",
+          "price": 92,
+          "category": "pastries",
+          "image": "whisky.jpg",
+          "id": "9",
+          "quantity": 1
+        }
+      ],
+      "total": 92,
+      "date": "2025-06-04T18:31:19.052Z"
+    },
+    {
+      "id": "c406",
+      "userId": "guest_xm1o1ee4o",
+      "items": [
+        {
+          "name": "Basil Pancakes",
+          "nameKey": "starters_text7",
+          "description": "Basil Pancakes - a delicious breakfast",
+          "descriptionKey": "starters_text8",
+          "price": 12,
+          "category": "starters",
+          "image": "basil-pancakes.jpg",
+          "id": "3",
+          "quantity": 1
+        }
+      ],
+      "total": 12,
+      "date": "2025-06-04T18:32:59.284Z"
+    }
+  ],
+  "users": [
+    {
+      "id": "6200",
+      "phone": "+375333333333",
+      "email": "dsafdsaf@mail.ru",
+      "birthdate": "2000-02-02",
+      "password": "8@sXgn9DQjb",
+      "firstName": "adf",
+      "lastName": "asf",
+      "middleName": "sdaf",
+      "username": "Use2r",
+      "agreement": true,
+      "registrationDate": "2025-06-01T21:26:31.831Z",
+      "role": "admin"
+    },
+    {
+      "id": "41bd",
+      "phone": "+375333333334",
+      "email": "a@m.ru",
+      "birthdate": "2000-02-02",
+      "password": "1234",
+      "firstName": "asdf",
+      "lastName": "asdfa",
+      "middleName": "adsf",
+      "username": "User",
+      "agreement": true,
+      "registrationDate": "2025-06-02T12:29:54.948Z",
+      "role": "admin"
+    }
+  ]
 }

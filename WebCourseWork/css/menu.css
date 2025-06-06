@@ -101,12 +101,26 @@
         text-shadow: 0 0 15px;
     }
 
+    header .header-reload-btn{
+       height: 3rem;
+       width: 3rem;
+       background: transparent;
+       border: none;
+       margin-left: 14.8rem;
+       margin-top: 4.3rem;  
+    }
+
+    header .header-reload-btn img{
+         height: 4.5rem;
+         width: 4.5rem;
+    }
+
     header .header-basket-btn{
         width: 3.563rem;
         height: 3.313rem;
         background-color: transparent;
         border: none;
-        margin-left: 20.313rem;
+        margin-left: 2.5rem;
         margin-top: 4.938rem;
     }
 

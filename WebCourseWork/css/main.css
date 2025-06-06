@@ -99,12 +99,26 @@ header .header_btn{
     text-shadow: 0 0 15px;
 }
 
+header .header-reload-btn{
+    height: 3rem;
+    width: 3rem;
+    background: transparent;
+    border: none;
+    margin-left: 9rem;
+    margin-top: 4rem;  
+}
+
+header .header-reload-btn img{
+    height: 4.5rem;
+    width: 4.5rem;
+}
+
 header .header-basket-btn{
     width: 3.563rem;
     height: 3.313rem;
     background-color: transparent;
     border: none;
-    margin-left: 14.688rem;
+    margin-left: 2.56rem;
     margin-top: 4.938rem;
 }
 
@@ -113,7 +127,7 @@ header .poor-vision-version-btn{
     height: 3.313rem;
     background: transparent;
     border: none;
-    margin-left: 1.813rem;
+    margin-left: 1.9rem;
     margin-top: 4.938rem;
 }
 

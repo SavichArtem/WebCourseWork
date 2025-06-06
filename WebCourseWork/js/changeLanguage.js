@@ -150,4 +150,12 @@ function checkBrowserLang() {
   }
 }
 
+// Делаем функцию resetLanguage доступной глобально
+window.resetLanguage = function() {
+  currentLang = localStorage.getItem("language") || checkBrowserLang() || "en";
+  checkPagePathName();
+  changeLang();
+  checkActiveLangButton();
+};
+
 console.log("navigator.language", checkBrowserLang());

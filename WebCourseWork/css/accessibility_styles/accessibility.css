@@ -178,3 +178,110 @@ body.accessibility-enabled.font-large {
   align-items: center;
   justify-content: center;
 }
+
+@media (max-width: 320px) {
+  body.accessibility-enabled .imageBox_first p
+  {
+    margin-top: 20rem;
+  }
+   body.accessibility-enabled .menu_section_menu{
+    row-gap: 22rem;
+   }
+  body.accessibility-enabled .ImageBox_second,
+  body.accessibility-enabled .category_section {
+    margin-top: 24rem;
+  }
+  body.accessibility-enabled .menu_section
+  {
+    margin-top: 26rem;
+  }
+  body.accessibility-enabled .chef_section
+  {
+    margin-top: 90rem;
+  }
+  body.accessibility-enabled .features_section{
+    margin-top: 10rem;
+  }
+  body.accessibility-enabled .chef_section_container{
+    row-gap: 250px !important;
+    height: 50rem;
+  }
+  body.accessibility-enabled .features_content{
+    row-gap: 15rem;
+  }
+  body.accessibility-enabled .recent_post_container{
+    row-gap: 40rem;
+    height: 150rem;
+  }
+  body.accessibility-enabled .recent_post_section{
+    margin-top: 40rem;
+  }
+  body.accessibility-enabled .category_section{
+    margin-top: 80rem;
+  }
+  body.accessibility-enabled .testimonials{
+    margin-top: 10rem;
+    height: 30rem;
+  }
+  body.accessibility-enabled .swiper{
+    height: 35rem;
+  }
+  body.accessibility-enabled footer{
+    margin-top: 2rem;
+  }
+  body.accessibility-enabled .footer_container{
+    height: 10rem;
+  }
+  body.accessibility-enabled .footer_form{
+    margin-top: 50rem;
+  }
+  body.accessibility-enabled .footer_form input{
+    margin-top: 30rem;
+    margin-left: 9rem;
+  }
+  body.accessibility-enabled .footer_form p{
+    width: 20rem;
+    margin-top: 19rem;
+    margin-left: 5.5rem;
+  }
+  body.accessibility-enabled .footer_form h5{
+    width: 20rem;
+    margin-top: 15rem;
+    margin-left: 5.5rem;
+  }
+  body.accessibility-enabled .footer_line_img{
+    margin-top: 55rem;
+  }
+  body.accessibility-enabled .footer_copyright_icons{
+    margin-top: 8rem;
+  }
+  body.accessibility-enabled .testimonials_client{
+    margin-top: 11rem;
+  }
+  body.accessibility-enabled .hero_scroll_default{
+    padding-top: 45rem;
+  }
+  body.accessibility-enabled .footer_content{
+    margin-left: -2rem;
+    margin-top: 15rem;
+  }
+  body.accessibility-enabled .footer_form button{
+    margin-left: 12.5rem;
+  }
+
+  body.accessibility-enabled .accessibility-panel {
+    position: absolute;
+  }
+  body.accessibility-enabled .hero_section{
+    margin-top: 40rem;
+  }
+}
+
+@media (max-width: 768px) {
+  body.accessibility-enabled .accessibility-panel {
+    position: absolute;
+  }
+  body.accessibility-enabled .hero_section{
+    margin-top: 30rem;
+  }
+}
