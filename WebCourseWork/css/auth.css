@@ -256,3 +256,107 @@
 .dark-theme .admin-icon {
     filter: invert(90%);
 }
+
+.header_btn:hover,
+.reservations_btn:hover,
+.reservation_container button:hover,
+.footer_form_box button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+/* 2. Анимация нажатия */
+button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.1s ease;
+}
+
+/* 3. Анимация переключения темы (иконки) */
+.night-theme-btn:hover .moon,
+.night-theme-btn:hover .sun {
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/* 4. Анимация кнопки корзины */
+.priceList .product_basket:hover,
+.header-basket-btn:hover img,
+.product_basket:hover img {
+  animation: shake 0.5s ease;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-3px); }
+  75% { transform: translateX(3px); }
+}
+
+/* 5. Анимация кнопки перезагрузки */
+.header-reload-btn:hover img {
+  animation: spin 0.7s linear;
+}
+
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}
+
+/* 6. Анимация кнопок категорий */
+.category_section_blocks a:hover {
+  color: #5E6600;
+  transition: color 0.3s ease;
+}
+
+.category_section_blocks a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #5E6600;
+  transition: width 0.3s ease;
+}
+
+.category_section_blocks a:hover::after {
+  width: 100%;
+}
+
+/* 7. Анимация стрелки "Read More" */
+.post_card_readMore:hover img {
+  animation: slide 0.8s infinite alternate;
+}
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(8px); }
+}
+
+/* 8. Анимация кнопки "Reserve" */
+.reservation_container button:hover {
+  background: #5E6600;
+  border-color: #5E6600;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* 9. Анимация иконок соцсетей в футере */
+.footer_copyright_icons img:hover {
+  transform: translateY(-5px);
+  filter: brightness(120%);
+  transition: all 0.3s ease;
+}
+
+/* 10. Эффект "пульсации" для кнопки бронирования */
+@keyframes pulse-glow {
+  0% { box-shadow: 0 0 0 0 rgba(94, 102, 0, 0.7); }
+  70% { box-shadow: 0 0 0 10px rgba(94, 102, 0, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(94, 102, 0, 0); }
+}
+
+.reservations_btn {
+  animation: pulse-glow 2s infinite;
+}
